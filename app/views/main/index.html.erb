@@ -67,16 +67,22 @@
 </section>
 <section class="forth_section">
 <div class="container-fluid">
-	<div class="row" style="margin-top: 150px;">		
+	<div class="row" style="margin-top: 80px;">		
     	<div class="col-sm-2 col-sm-offset-2">
-    	aaaaaa
+    		<%=image_tag 'forth_1.png', style:'visibility: hidden; height: 320px;', class: 'forth_1'%> 	 		
+    		<%=image_tag 'forth_2.png', style:'visibility: hidden; height: 320px; margin-top: 30px; margin-left: 60px;', class: 'forth_2'%> 	
  		</div>
     	<div class="col-sm-4">    		
-    		<div style="width: 550px; letter-spacing: 4px; color:#ffffff; font-size: 38px; text-align: center;">從頭頂至腳底，<br>充分滿足你對按摩的美好想像</div>
-    		<%=image_tag 'forth_circle.png', style:'', class: ''%> 	 		
+    		<div class="center-block" style="width: 550px; letter-spacing: 4px; color:#ffffff; font-size: 25px; line-height: 30px; text-align: center;">從頭頂至腳底，<br>充分滿足你對按摩的美好想像</div>
+    		<%=image_tag 'forth_circle.png', style:'height: 400px;', class: 'center-block'%> 
+    		<div class="center-block">	
+    		<%=image_tag 'forth_3.png', style:'visibility: hidden; height: 280px; margin-left: 20px;', class: 'forth_3'%> 
+    		<%=image_tag 'forth_4.png', style:'visibility: hidden; height: 280px;', class: 'pull-right forth_4'%>    	
+    		</div>	    		 		
  		</div>
     	<div class="col-sm-2">
-    	aaaaaaa
+    		<div><%=image_tag 'forth_6.png', style:'visibility: hidden; height: 310px;', class: 'pull-right forth_5'%></div>    		
+    		<div><%=image_tag 'forth_5.png', style:'visibility: hidden; height: 270px; margin-top: 35px; margin-right: 45px;', class: 'pull-right forth_6'%></div> 
  		</div> 		 		
     </div>
 </div>
@@ -124,7 +130,25 @@ $(document).ready(function($) {
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".third_section"})
 								.setTween(TweenMax.to(".third_3_stick", 10, {autoAlpha: 1, ease: Back.easeOut}))
-								.addTo(controller)																																									
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".forth_section"})
+								.setTween(TweenMax.to(".forth_1", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".forth_section"})
+								.setTween(TweenMax.to(".forth_2", 3, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".forth_section"})
+								.setTween(TweenMax.to(".forth_3", 4, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".forth_section"})
+								.setTween(TweenMax.to(".forth_4", 5, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".forth_section"})
+								.setTween(TweenMax.to(".forth_5", 6, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)		
+	new ScrollScene({triggerElement: ".forth_section"})
+								.setTween(TweenMax.to(".forth_6", 7, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)																																																																																								
 	/*							
 	new ScrollScene({triggerElement: ".index_background"})
 								.setTween(TweenMax.from(".conditioning", 1.8, {left: "-60", ease: Linear.easeNone}))
