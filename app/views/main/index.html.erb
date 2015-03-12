@@ -1,24 +1,72 @@
 <section class="first_section">
 <div class="container-fluid">
-	<div class="row">
-    	<div class="col-xs-3">
-    		fsd
+	<div class="row">	
+    	<div class="col-sm-12">
+    	
  		</div>		
-    	<div class="col-xs-9">
-    		fsd
- 		</div>
     </div>
 </div>
 </section>
 <section class="second_section">
 <div class="container-fluid">
-	<div class="row fill first_page">
-    	<div class="col-xs-3">
-    		fsd
+	<div class="row first_page">
+    	<div class="hidden-xs col-sm-4 col-sm-offset-2">
+    		<%=image_tag 'sec_figure.png', style:'height: 500px; position: relative; top: 200px;', class: 'sec_figure'%>
  		</div>		
-    	<div class="col-xs-9">
-    		fsd
+    	<div class="col-sm-4 col-xs-12" style="padding-left: 20px;">
+    		<div style="max-width: 460px; margin-top: 70px; font-size: 38px; letter-spacing: 0.8px;">輝葉<span style="font-size: 55px;">30</span>始終關心您的健康</div>
+    		<div style="max-width: 460px; padding-bottom: 5px;font-size: 20px; letter-spacing: 3.6px; border-bottom: 1px solid;">一直以來，我們堅持用時間細磨出高端品質</div>
+    		<div style="max-width: 460px; margin-top: 10px; font-size: 15px; letter-spacing: 4px; line-height: 24px;">
+    		自民國72年創立以來，即以「 帶給人們更健康的生活 」為目標，不斷精進服務品質與技術，有別於一般健康器材品牌，採全直營方式銷與消費者做最直接的互動，聆聽每位客戶最深層的需求。期盼給您最親切專業的服務體驗，並與您一同邁向健康的人生！
+ 			</div>
  		</div>
     </div>
 </div>
 </section>
+<section class="third_section">
+<div class="container-fluid">
+	<div class="row first_page">		
+    	<div class="col-xs-12">
+    	aaaaaa
+ 		</div>
+    </div>
+</div>
+</section>
+
+	
+<script>
+var controller;
+$(document).ready(function($) {
+	// function to be used to retrieve variable
+	function getWindowHeight() {
+		return windowHeight;
+	}	
+	// update window height on resize
+	$(window).on("resize", function () {
+			windowHeight = $(window).innerHeight();
+	});		
+	// init controller
+	controller = new ScrollMagic();
+	// build scenes
+	new ScrollScene({triggerElement: ".second_section"})
+								.setTween(TweenMax.to(".sec_figure", 2, {top: "30", ease: Linear.easeNone}))
+								.addTo(controller)
+	/*							
+	new ScrollScene({triggerElement: ".index_background"})
+								.setTween(TweenMax.from(".conditioning", 1.8, {left: "-60", ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".index_background"})
+								.setTween(TweenMax.from(".experts", 1, {left: "-60", ease: Linear.easeNone}))
+								.addTo(controller)																	
+	new ScrollScene({triggerElement: ".index_background"})
+								.setTween(TweenMax.to(".slogan_first", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller);	
+	new ScrollScene({triggerElement: ".index_background"})
+								.setTween(TweenMax.to(".slogan_second", 2, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller);	
+	new ScrollScene({triggerElement: ".index_background"})
+								.setTween(TweenMax.to(".slogan_third", 3, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller);	
+	*/																																																															
+});	
+</script>

@@ -14,4 +14,8 @@
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require bootstrap-sprockets
+//= require TweenMax.min.js
+//= require modernizr.custom.min.js
+//= require jquery.scrollmagic.js
+//= require jquery.scrollmagic.debug.js
 //= require_tree .
