@@ -9,14 +9,14 @@
 </section>
 <section class="second_section">
 <div class="container-fluid">
-	<div class="row first_page">
+	<div class="row">
     	<div class="hidden-xs col-sm-4 col-sm-offset-2">
-    		<%=image_tag 'sec_figure.png', style:'height: 500px; position: relative; top: 200px;', class: 'sec_figure'%>
+    		<%=image_tag 'sec_figure.png', style:'height: 450px; position: relative; top: 200px;', class: 'sec_figure'%>
  		</div>		
     	<div class="col-sm-4 col-xs-12" style="padding-left: 20px;">
-    		<div style="max-width: 460px; margin-top: 70px; font-size: 38px; letter-spacing: 0.8px;">輝葉<span style="font-size: 55px;">30</span>始終關心您的健康</div>
-    		<div style="max-width: 460px; padding-bottom: 5px;font-size: 20px; letter-spacing: 3.6px; border-bottom: 1px solid;">一直以來，我們堅持用時間細磨出高端品質</div>
-    		<div style="max-width: 460px; margin-top: 10px; font-size: 15px; letter-spacing: 4px; line-height: 24px;">
+    		<div style="max-width: 470px; margin-top: 70px; font-size: 38px; letter-spacing: 1.9px;">輝葉<span style="font-size: 55px;">30</span>始終關心您的健康</div>
+    		<div style="max-width: 470px; padding-bottom: 5px;font-size: 20px; letter-spacing: 4.6px; border-bottom: 1px solid;">一直以來，我們堅持用時間細磨出高端品質</div>
+    		<div style="max-width: 470px; margin-top: 10px; font-size: 15px; letter-spacing: 4px; line-height: 24px;">
     		自民國72年創立以來，即以「 帶給人們更健康的生活 」為目標，不斷精進服務品質與技術，有別於一般健康器材品牌，採全直營方式銷與消費者做最直接的互動，聆聽每位客戶最深層的需求。期盼給您最親切專業的服務體驗，並與您一同邁向健康的人生！
  			</div>
  		</div>
@@ -25,8 +25,42 @@
 </section>
 <section class="third_section">
 <div class="container-fluid">
-	<div class="row first_page">		
-    	<div class="col-xs-12">
+	<div class="row" style="margin-top: 150px;">		
+    	<div class="col-sm-2 col-sm-offset-2">
+    		<%=image_tag 'third_slogan.png', style:'', class: ''%>
+    		<div style="width: 400px; color:#774718; font-size: 36px; font-weight: bold; letter-spacing: 3px;">智能穴位按摩技術<span style="font-weight: normal">＞</span></div>
+    		<div class="third_descrip third_1_d" style="margin-top: 30px; width: 250px; position: relative;">
+    			<div class="third_descrip_title">人性化穴位感應系統</div>
+    			<div class="third_descrip_cont">利用光學感應器，可準確探測身體的各大按摩穴位，其中獨特的自動檢測及微調功能，更能自動感應、依您的身體S曲線做個人化調整。</div>    			
+    		</div>  		
+    		<%=image_tag 'third_back.png', style:'height: 250px; margin-top: 30px;', class: ''%> 		
+ 		</div>	
+    	<div class="col-sm-4">
+    		<%=image_tag 'third_chair.png', style:'height: 500px; margin-top: 60px;', class: ''%>
+ 		</div> 			 
+    	<div class="col-sm-4">
+    		<%=image_tag 'third_2_stick.png', style:'width: 100px;', class: ''%>
+    		<div class="third_descrip third_2_d" style="margin-top: 30px; width: 250px; position: relative;">
+    			<div class="third_descrip_title">創新提抓技術</div>
+    			<div class="third_descrip_cont">獨特按摩手法的關鍵在於：針對肩頸，先往前拉提，再向下推壓；不同於一般按摩椅，智尊椅獨有的下壓勁道更使得真人提抓按摩的舒暢感得以重現，讓您在家就能夠享受大師級的按摩手法與技術。</div>    			
+    		</div>  
+    		<div class="third_descrip third_3_d" style="margin-top: 30px; width: 350px; position: relative;">
+    			<div class="third_descrip_title">背部按摩範圍+20%</div>
+    			<div class="third_descrip_cont">可全面覆蓋人體背部，從肩頸、胸椎到腰椎，比傳統的背部按摩範圍增加20%以上，可滿足各類體型的人士使用，讓您充分享受專屬於您的按摩理療程式。</div>    			
+    		</div>    
+    		<div style="margin-top: 30px;">  		    		
+    		<%=image_tag 'third_1.png', style:'', class: ''%> 	
+     		<%=image_tag 'third_2.png', style:'', class: ''%> 	
+     		<%=image_tag 'third_3.png', style:'', class: ''%> 	
+     		</div>    		   		
+ 		</div> 	 				
+    </div>
+</div>
+</section>
+<section class="forth_section">
+<div class="container-fluid">
+	<div class="row">		
+    	<div class="col-sm-12">
     	aaaaaa
  		</div>
     </div>
@@ -51,6 +85,15 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".second_section"})
 								.setTween(TweenMax.to(".sec_figure", 2, {top: "30", ease: Linear.easeNone}))
 								.addTo(controller)
+	new ScrollScene({triggerElement: ".third_section"})
+								.setTween(TweenMax.from(".third_1_d", 2, {left: "-60", ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".third_section"})
+								.setTween(TweenMax.from(".third_2_d", 2, {right: "-60", ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".third_section"})
+								.setTween(TweenMax.from(".third_3_d", 2, {right: "-100", ease: Linear.easeNone}))
+								.addTo(controller)																								
 	/*							
 	new ScrollScene({triggerElement: ".index_background"})
 								.setTween(TweenMax.from(".conditioning", 1.8, {left: "-60", ease: Linear.easeNone}))
