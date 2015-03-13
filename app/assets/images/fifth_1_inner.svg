@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="41.328px" height="41.294px" viewBox="0 0 41.328 41.294" enable-background="new 0 0 41.328 41.294" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-4.483" y="-4.518" width="50.294" height="50.294"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" x="-4.483" y="-4.517" width="50.294" height="50.294"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_4_)" fill="#FFFFFF" d="M20.664,41.294c11.413,0,20.664-9.252,20.664-20.665
+			S32.077-0.035,20.664-0.035S0,9.217,0,20.63S9.251,41.294,20.664,41.294"/>
+		<circle clip-path="url(#SVGID_4_)" fill="none" stroke="#C2996B" stroke-width="0.25" cx="20.664" cy="20.63" r="20.665"/>
+	</g>
+	<g clip-path="url(#SVGID_2_)">
+		<text transform="matrix(1 0 0 1 5.4746 17.4009)"><tspan x="0" y="0" fill="#793D27" font-family="'KozGoPr6N-Regular-83pv-RKSJ-H'" font-size="7.56">按摩程式</tspan><tspan x="30.24" y="0" fill="#793D27" font-family="'DFHeiStd-W3'" font-size="7.56" letter-spacing="-2"> </tspan><tspan x="29.379" y="0" fill="#793D27" font-family="'DFHeiStd-W3'" font-size="7.56"> </tspan></text>
+	</g>
+	<g clip-path="url(#SVGID_2_)">
+		
+			<text transform="matrix(1 0 0 1 5.4746 29.1646)" fill="#793D27" font-family="'KozGoPr6N-Regular-83pv-RKSJ-H'" font-size="7.56">無限更新</text>
+	</g>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#C2996B" stroke-width="0.25" x1="1.989" y1="20.63" x2="39.135" y2="20.63"/>
+</g>
+</svg>

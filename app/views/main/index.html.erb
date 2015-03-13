@@ -89,12 +89,50 @@
 </section>
 <section class="fifth_section">
 <div class="container-fluid">
+	<div class="row" style="margin-top: 150px;">		
+    	<div class="col-sm-8 col-sm-offset-2" style="background: #f7f2e9; border-radius: 25px; padding: 10px;">    	
+     		<%=image_tag 'fifth_circle.png', style:'visibility: hidden;', class: 'center-block fifth_circle'%> 	
+ 		</div>
+    </div>
 	<div class="row">		
-    	<div class="col-sm-12">    	
+    	<div class="col-sm-3 col-sm-offset-4" style="margin-top: 15px;">    
+    		<div style="width: 400px; color:#774718; font-size: 36px; font-weight: bold; letter-spacing: 3px;">智尊專屬APP<span style="font-weight: normal">＞</span></div>    			
+ 		</div>
+    </div> 
+	<div class="row" style="">		
+    	<div class="col-sm-1 col-sm-offset-1">    	
+     		<%=image_tag 'fifth_chair.png', style:'position: relative; z-index:1; right: -180px; width: 400px;', class: 'fifth_chair'%> 		
+ 		</div>		
+    	<div class="col-sm-8">    	
+     		<%=image_tag 'fifth_living.png', style:'position: relative; z-index:0; margin-top: 20px; width: 700px;', class: 'center-block'%> 	
+ 		</div>
+    	<div class="col-sm-1">    	
+     		<%=image_tag 'iphone.png', style:'position: relative; left: -350px; top: -50px;', class: ''%> 	
+ 		</div> 		
+    </div>  
+	<div class="row">		
+    	<div class="col-sm-4 col-sm-offset-6" style="">    
+    		<div style='position: absolute; top:-100px; width: 180px;'>
+    		<%=image_tag 'fifth_1_inner.svg', style: 'min-width: 150px; position: absolute; left: 15px; top: 15px;'%> 
+    		<%=image_tag 'fifth_2_outter.svg', style: 'visibility: hidden; min-width: 180px;', class: 'fifth_2_outter'%>    
+    		</div>
+    		<div style='position: absolute; top:-100px; left: 250px; width: 180px;'>  		   		
+    		<%=image_tag 'fifth_2_inner.svg', style: 'min-width: 150px; position: absolute; left: 15px; top: 15px;'%>
+    		<%=image_tag 'fifth_2_outter.svg', style: 'visibility: hidden; min-width: 180px;', class: 'fifth_2_outter'%>    		
+ 			</div>
+ 		</div>
+    </div>         
+</div>
+</section>
+<section class="sixth_section">
+<div class="container-fluid">
+	<div class="row">		
+    	<div class="col-sm-12">    	    		
  		</div>
     </div>
 </div>
 </section>
+
 	
 <script>
 var controller;
@@ -148,7 +186,17 @@ $(document).ready(function($) {
 								.addTo(controller)		
 	new ScrollScene({triggerElement: ".forth_section"})
 								.setTween(TweenMax.to(".forth_6", 7, {autoAlpha: 1, ease: Linear.easeNone}))
-								.addTo(controller)																																																																																								
+								.addTo(controller)									
+	new ScrollScene({triggerElement: ".fifth_section"})
+								.setTween(TweenMax.to(".fifth_circle", 3, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".fifth_section"})
+								.setTween(TweenMax.to(".fifth_chair", 2, {right: "-260", ease: Linear.easeNone}))
+								.addTo(controller)																				
+	new ScrollScene({triggerElement: ".fifth_section"})
+		.setTween(TweenMax.fromTo(".fifth_2_outter", 1,
+				  {autoAlpha: 1},
+				  {autoAlpha: 0, repeat: -1, yoyo: true, ease: Linear.easeNone})).addTo(controller);																																																																																											
 	/*							
 	new ScrollScene({triggerElement: ".index_background"})
 								.setTween(TweenMax.from(".conditioning", 1.8, {left: "-60", ease: Linear.easeNone}))
