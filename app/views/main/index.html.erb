@@ -133,19 +133,19 @@
     </div>
 	<div class="row">		
     	<div class="col-sm-offset-2 col-sm-1">    
-       		<div style="width: 150px;" class="sixth_1">
+       		<div style="width: 150px; position: relative;" class="sixth_1">
        			<div class="sixth_slogan_s">超纖皮革 極佳觸感</div><br>
        			<%=image_tag 'sixth_1.png', style:'', class: ''%>
        		</div> 	
 		</div>       		
     	<div class="col-sm-2">        		
-       		<div style="width: 150px;" class="sixth_2 center-block">
+       		<div style="width: 150px; position: relative;" class="sixth_2 center-block">
        			<div class="sixth_slogan_s">流線外型 時尚出色</div><br>       		    		  	    		
        			<%=image_tag 'sixth_2.png', style:'', class: ''%> 	  
        		</div> 	 
 		</div>       		      
        	<div class="col-sm-2"> 			
-       		<div style="width: 150px;" class="sixth_3">
+       		<div style="width: 150px; position: relative;" class="sixth_3">
        			<div class="sixth_slogan_s">負氧離子 清淨健康</div><br>      		
        			<%=image_tag 'sixth_3.png', style:'', class: ''%> 
        		</div> 	       				         		  			    		
@@ -251,7 +251,16 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".fifth_section"})
 		.setTween(TweenMax.fromTo(".fifth_2_outter", 1,
 				  {autoAlpha: 1},
-				  {autoAlpha: 0, repeat: -1, yoyo: true, ease: Linear.easeNone})).addTo(controller);																																																																																											
+				  {autoAlpha: 0, repeat: -1, yoyo: true, ease: Linear.easeNone})).addTo(controller);	
+	new ScrollScene({triggerElement: ".sixth_section"})
+								.setTween(TweenMax.to(".sixth_1", 3, {top: "110", ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".sixth_section"})
+								.setTween(TweenMax.to(".sixth_2", 2, {top: "55", ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".sixth_section"})
+								.setTween(TweenMax.to(".sixth_3", 1, {top: "80", ease: Linear.easeNone}))
+								.addTo(controller)																				  																																																																																										
 	/*							
 	new ScrollScene({triggerElement: ".index_background"})
 								.setTween(TweenMax.from(".conditioning", 1.8, {left: "-60", ease: Linear.easeNone}))
