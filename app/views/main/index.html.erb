@@ -83,39 +83,44 @@
     </div>
 </div>
 </section>
+
+
+
+
 <section class="third_3_section">
 <div class="container-fluid">
-	<div class="row">
-    	<div class="col-sm-2 col-sm-offset-2">
+	<div class="row third_3_r1" style="height: 500px; visibility: hidden;">
+    	<div class="col-sm-3 col-sm-offset-2">
     		<div style="width: 400px; color:#774718; font-size: 36px; font-weight: bold; letter-spacing: 3px;">全新氣囊按壓技術<br>全身氣壓徹底包覆</div>    		    		
-    		<%=image_tag 'third_3_upper.png', style:'', class: ''%> 
+    		<%=image_tag 'third_3_upper.png', style:'width: 80%', class: ''%> 
     		<%=image_tag 'third_3_c1.png', style:'', class: ''%> 		
     		<%=image_tag 'third_3_c2.png', style:'', class: ''%> 		
     		<%=image_tag 'third_3_c3.png', style:'', class: ''%>     				
- 		</div>		
-    	<div class="col-sm-4" style="">
- 		</div> 	
-    	<div class="col-sm-4" style="">
+ 		</div>			
+    	<div class="col-sm-4 col-sm-offset-3" style="">
     		<%=image_tag 'third_3_c4.png', style:'', class: ''%> 		
     		<%=image_tag 'third_3_c5.png', style:'', class: ''%> 		
     		<%=image_tag 'third_3_c6.png', style:'', class: ''%> 		 		
  		</div> 	 		
     </div>
-	<div class="row">    
+	<div class="row third_3_r2" style="visibility: hidden;">    
         <div class="col-sm-3 col-sm-offset-2" style="">
     		<%=image_tag 'third_3_text.png', style:'', class: ''%> 		        	
  		</div>		 
     </div>    
-	<div class="row">    
+	<div class="row  third_3_r3" style="visibility: hidden;">    
         <div class="col-sm-4 col-sm-offset-2" style="">
     		<%=image_tag 'third_3_circle.png', style:'width: 90%', class: ''%> 		        	
  		</div>
-         <div class="col-sm-3" style="">
-    		<%=image_tag 'third_3_star.png', style:'width: 100%', class: ''%> 		        	         	
+         <div class="col-sm-3 col-sm-offset-1" style="">
+    		<%=image_tag 'third_3_star.png', style:'width: 100%', class: 'center-block'%> 		        	         	
  		</div> 		 
     </div> 			
 </div>
 </section>
+
+
+
 <section class="forth_section">
 <div class="container-fluid">
 	<div class="row" style="margin-top: 80px;">		
@@ -310,9 +315,9 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".third_section"})
 								.setTween(TweenMax.from(".third_3_d", 2, {right: "-80", ease: Linear.easeNone}))
 								.addTo(controller)		
-	new ScrollScene({triggerElement: ".third_section", duration: '1400', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '1500', triggerHook: "0.1"})
 						.setPin(".third_chair")
-						.addIndicators({name: "1 (duration: 1400)"}) // add indicators (requires plugin)
+						.addIndicators({name: "1 (duration: 1500)"}) // add indicators (requires plugin)
 						.addTo(controller);			
 	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.4"})
 								.setTween(TweenMax.from(".third_2_1_d", 1, {right: "-20", ease: Linear.easeNone}))
