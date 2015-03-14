@@ -1,8 +1,7 @@
 <section class="first_section">
 <div class="container-fluid">
 	<div class="row">	
-    	<div class="col-sm-12">
-    	
+    	<div class="col-sm-12">	
  		</div>		
     </div>
 </div>
@@ -11,10 +10,10 @@
 <div class="container-fluid">
 	<div class="row">
     	<div class="hidden-xs col-sm-4 col-sm-offset-2">
-    		<%=image_tag 'sec_figure.png', style:'height: 450px; position: relative; top: 120px;', class: 'sec_figure'%>
+    		<%=image_tag 'sec_figure.png', style:'height: 450px; position: relative; top: 100px;', class: 'sec_figure'%>
  		</div>		
-    	<div class="col-sm-4 col-xs-12" style="padding-left: 20px;">
-    		<div style="max-width: 470px; margin-top: 70px; font-size: 38px; letter-spacing: 1.9px;">輝葉<span style="font-size: 55px;">30</span>始終關心您的健康</div>
+    	<div class="col-sm-5" style="padding-left: 20px;">
+    		<div style="max-width: 470px; margin-top: 70px; font-size: 36px; letter-spacing: 1.9px;">輝葉<span style="font-size: 55px;">30</span>始終關心您的健康</div>
     		<div style="max-width: 470px; padding-bottom: 5px;font-size: 20px; letter-spacing: 4.6px; border-bottom: 1px solid;">一直以來，我們堅持用時間細磨出高端品質</div>
     		<div style="max-width: 470px; margin-top: 10px; font-size: 15px; letter-spacing: 4px; line-height: 24px;">
     		自民國72年創立以來，即以「 帶給人們更健康的生活 」為目標，不斷精進服務品質與技術，有別於一般健康器材品牌，採全直營方式銷與消費者做最直接的互動，聆聽每位客戶最深層的需求。期盼給您最親切專業的服務體驗，並與您一同邁向健康的人生！
@@ -34,7 +33,6 @@
     			<div class="third_descrip_title">人性化穴位感應系統</div>
     			<div class="third_descrip_cont">利用光學感應器，可準確探測身體的各大按摩穴位，其中獨特的自動檢測及微調功能，更能自動感應、依您的身體S曲線做個人化調整。</div>    			
     			</div>
-    			<!--<%=image_tag 'third_1_stick.png', style:'visibility: hidden; width: 60px; position: relative; top: -100px; right: -330px;', class: 'third_1_stick'%>-->    			
 			</div>    		  		
     		<%=image_tag 'third_back.png', style:'height: 250px; margin-top: 30px; margin-left: 50px;', class: ''%> 		
  		</div>	
@@ -43,14 +41,12 @@
  		</div> 			 
     	<div class="col-sm-4">
     		<div style="margin-top: 30px;">
-    			<!--<%=image_tag 'third_2_stick.png', style:'visibility: hidden; display: inline-block; width: 100px; position: relative; top: -100px; left: -100px;', class: 'third_2_stick'%>-->
     			<div class="third_descrip third_2_d" style="display: inline-block; width: 250px; position: relative; right: 100px;">
     			<div class="third_descrip_title">創新提抓技術</div>
     			<div class="third_descrip_cont">獨特按摩手法的關鍵在於：針對肩頸，先往前拉提，再向下推壓；不同於一般按摩椅，智尊椅獨有的下壓勁道更使得真人提抓按摩的舒暢感得以重現，讓您在家就能夠享受大師級的按摩手法與技術。</div>    			
     			</div>  
     		</div>
     		<div style="margin-top: 30px;">
-	    		<!--<%=image_tag 'third_2_stick.png', style:'visibility: hidden; display: inline-block; width: 120px; position: relative; top: -90px; left: -130px;', class: 'third_3_stick'%>-->    			
     			<div class="third_descrip third_3_d" style="display: inline-block; width: 350px; position: relative; right: 70px;">
     			<div class="third_descrip_title">背部按摩範圍+20%</div>
     			<div class="third_descrip_cont">可全面覆蓋人體背部，從肩頸、胸椎到腰椎，比傳統的背部按摩範圍增加20%以上，可滿足各類體型的人士使用，讓您充分享受專屬於您的按摩理療程式。</div>    			
@@ -303,7 +299,7 @@ $(document).ready(function($) {
 	controller = new ScrollMagic();
 	// build scenes
 	new ScrollScene({triggerElement: ".second_section"})
-								.setTween(TweenMax.to(".sec_figure", 2, {top: "40", ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".sec_figure", 2, {top: "20", ease: Linear.easeNone}))
 								.addTo(controller)
 	new ScrollScene({triggerElement: ".third_section"})
 								.setTween(TweenMax.from(".third_1_d", 2, {right: "-20", ease: Linear.easeNone}))
