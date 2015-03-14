@@ -196,9 +196,16 @@
  	</div>	
 	<div class="row">	 		
     	<div class="col-sm-4 col-sm-offset-2">	
+    		<div>
        		<%=image_tag 'seventh_search.png', style:'', class: 'seventh_search'%>      		 	    		
-       		<%=image_tag 'seventh_search_hand.png', style:'', class: 'seventh_search_hand'%>      		 	    		   		    		
- 		</div> 		
+       		<%=image_tag 'seventh_search_hand.png', style:'position: absolute', class: 'seventh_search_hand'%>
+       		</div>      		 	    		   		    		
+ 		</div> 	
+    	<div class="col-sm-4 col-sm-offset-2">	
+    		<div>
+       		<%=image_tag 'seventh_color.png', style:'', class: 'seventh_color'%>      		 	    		
+       		</div>      		 	    		   		    		
+ 		</div> 	 			
     </div>
 </div>
 </section>
@@ -309,9 +316,9 @@ $(document).ready(function($) {
 								.setTween(TweenMax.to(".seventh_chair_4", 7, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".seventh_section"})
-		.setTween(TweenMax.fromTo(".seventh_search_hand", 1,
-				  {autoAlpha: 1},
-				  {autoAlpha: 0, repeat: -1, yoyo: true, ease: Linear.easeNone})).addTo(controller);																																																											  																																																																																										
+		.setTween(TweenMax.fromTo(".seventh_search_hand", 2,
+				  {top: 50},
+				  {top: 30, repeat: -1, ease: Linear.easeNone})).addTo(controller);																																																											  																																																																																										
 	/*							
 	new ScrollScene({triggerElement: ".index_background"})
 								.setTween(TweenMax.from(".conditioning", 1.8, {left: "-60", ease: Linear.easeNone}))
