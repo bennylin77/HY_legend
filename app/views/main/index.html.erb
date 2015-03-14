@@ -24,12 +24,12 @@
 </section>
 <section class="third_section">
 <div class="container-fluid">
-	<div class="row" style="margin-top: 150px;">		
+	<div class="row" style="margin-top: 100px;">		
     	<div class="col-sm-2 col-sm-offset-2">
     		<%=image_tag 'third_slogan.png', style:'', class: ''%>
     		<div style="width: 400px; color:#774718; font-size: 36px; font-weight: bold; letter-spacing: 3px;">智能穴位按摩技術<span style="font-weight: normal">＞</span></div>
     		<div style="margin-top: 30px;" >        					
-    			<div class="third_descrip third_1_d" style="width: 250px; position: relative; right: -120px;">
+    			<div class="third_descrip third_1_d" style="width: 250px; position: relative; right: -90px;">
     			<div class="third_descrip_title">人性化穴位感應系統</div>
     			<div class="third_descrip_cont">利用光學感應器，可準確探測身體的各大按摩穴位，其中獨特的自動檢測及微調功能，更能自動感應、依您的身體S曲線做個人化調整。</div>    			
     			</div>
@@ -41,13 +41,13 @@
  		</div> 			 
     	<div class="col-sm-4">
     		<div style="margin-top: 30px;">
-    			<div class="third_descrip third_2_d" style="display: inline-block; width: 250px; position: relative; right: 100px;">
+    			<div class="third_descrip third_2_d" style="display: inline-block; width: 250px; position: relative; right: -50px;">
     			<div class="third_descrip_title">創新提抓技術</div>
     			<div class="third_descrip_cont">獨特按摩手法的關鍵在於：針對肩頸，先往前拉提，再向下推壓；不同於一般按摩椅，智尊椅獨有的下壓勁道更使得真人提抓按摩的舒暢感得以重現，讓您在家就能夠享受大師級的按摩手法與技術。</div>    			
     			</div>  
     		</div>
     		<div style="margin-top: 30px;">
-    			<div class="third_descrip third_3_d" style="display: inline-block; width: 350px; position: relative; right: 70px;">
+    			<div class="third_descrip third_3_d" style="display: inline-block; width: 350px; position: relative; right: -30px;">
     			<div class="third_descrip_title">背部按摩範圍+20%</div>
     			<div class="third_descrip_cont">可全面覆蓋人體背部，從肩頸、胸椎到腰椎，比傳統的背部按摩範圍增加20%以上，可滿足各類體型的人士使用，讓您充分享受專屬於您的按摩理療程式。</div>    			
     			</div>
@@ -65,19 +65,19 @@
 <div class="container-fluid">
 	<div class="row">
     	<div class="col-sm-2 col-sm-offset-2">
-    		<%=image_tag 'third_2_slogan.png', style:'', class: ''%>
-    		<div style="width: 400px; color:#774718; font-size: 36px; font-weight: bold; letter-spacing: 3px;">360°全包覆足底按摩<span style="font-weight: normal">＞</span></div>    			
-    		<div class="third_descrip third_2_1_d" style="display: inline-block; width: 300px; position: relative; right: -70px;">
+    		<%=image_tag 'third_2_slogan.png', style:'visibility: hidden;', class: 'third_2_slogan'%>
+    		<div class="third_2_slogan_text" style="visibility: hidden; width: 400px; color:#774718; font-size: 36px; font-weight: bold; letter-spacing: 3px;">360°全包覆足底按摩<span style="font-weight: normal">＞</span></div>    			
+    		<div class="third_descrip third_2_1_d" style="visibility: hidden; display: inline-block; width: 300px; position: relative; right: -70px; top: 40px;">
     			<div class="third_descrip_cont">以真人手感結合先進滾輪技術，提供專業按摩師般的刮痧按摩方式，對足底湧泉穴進行按摩，無論是輕柔穩定或是漸進是強力按摩，都能帶來前所未有的舒適和暢快。並針對腿部採氣囊加強，形狀各異的氣囊完整包覆小腿、腳踝及足部，對足三里穴、太溪穴、崑崙進行按摩、壓緊、停頓、放鬆的交互氣壓動做按摩方式，讓您到通體順暢，天人合一的境界。</div>    			
     		</div> 			
  		</div>		
     	<div class="col-sm-4" style="">
  		</div> 		
     	<div class="col-sm-4" style="">
-    		<div><%=image_tag 'third_2_circle.png', style:'', class: ''%></div>
-    		<div>
-    		<%=image_tag 'third_2_feet_1.png', style:'', class: ''%>
-    		<%=image_tag 'third_2_feet_2.png', style:'', class: ''%>
+    		<div><%=image_tag 'third_2_circle.png', style:'margin-left:40px;visibility: hidden;', class: 'third_2_circle'%></div>
+    		<div class="third_2_feet" style="margin-top: 50px; visibility: hidden;">
+    		<%=image_tag 'third_2_feet_1.png', style:'height: 190px;', class: ''%>
+    		<%=image_tag 'third_2_feet_2.png', style:'height: 190px;', class: ''%>
 			</div>
  		</div>
     </div>
@@ -305,32 +305,35 @@ $(document).ready(function($) {
 								.setTween(TweenMax.from(".third_1_d", 2, {right: "-20", ease: Linear.easeNone}))
 								.addTo(controller)
 	new ScrollScene({triggerElement: ".third_section"})
-								.setTween(TweenMax.from(".third_2_d", 2, {right: "0", ease: Linear.easeNone}))
+								.setTween(TweenMax.from(".third_2_d", 2, {right: "-80", ease: Linear.easeNone}))
 								.addTo(controller)
 	new ScrollScene({triggerElement: ".third_section"})
-								.setTween(TweenMax.from(".third_3_d", 2, {right: "0", ease: Linear.easeNone}))
-								.addTo(controller)	
-/*								
-	new ScrollScene({triggerElement: ".third_section"})
-								.setTween(TweenMax.to(".third_1_stick", 10, {autoAlpha: 1, ease: Back.easeOut}))
-								.addTo(controller)								
-	new ScrollScene({triggerElement: ".third_section"})
-								.setTween(TweenMax.to(".third_2_stick", 10, {autoAlpha: 1, ease: Back.easeOut}))
-								.addTo(controller)	
-	new ScrollScene({triggerElement: ".third_section"})
-								.setTween(TweenMax.to(".third_3_stick", 10, {autoAlpha: 1, ease: Back.easeOut}))
-								.addTo(controller)	
-*/		
-	new ScrollScene({triggerElement: ".third_section", duration: '600', triggerHook: "0.1"})
+								.setTween(TweenMax.from(".third_3_d", 2, {right: "-80", ease: Linear.easeNone}))
+								.addTo(controller)		
+	new ScrollScene({triggerElement: ".third_section", duration: '1400', triggerHook: "0.1"})
 						.setPin(".third_chair")
-						.addIndicators({name: "1 (duration: 600)"}) // add indicators (requires plugin)
-						.addTo(controller);							
+						.addIndicators({name: "1 (duration: 1400)"}) // add indicators (requires plugin)
+						.addTo(controller);			
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.4"})
+								.setTween(TweenMax.from(".third_2_1_d", 1, {right: "-20", ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.4"})
+								.setTween(TweenMax.to(".third_2_1_d", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)																																
 	new ScrollScene({triggerElement: ".third_2_section"})
-								.setTween(TweenMax.from(".third_2_1_d", 2, {right: "0", ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".third_2_circle", 1, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
-
-
-
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_2_slogan", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_2_feet", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)	
+								
+								
 	new ScrollScene({triggerElement: ".forth_section"})
 								.setTween(TweenMax.to(".forth_1", 1, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
