@@ -36,10 +36,10 @@
     			<div class="third_descrip_cont">利用光學感應器，可準確探測身體的各大按摩穴位，其中獨特的自動檢測及微調功能，更能自動感應、依您的身體S曲線做個人化調整。</div>    			
     			</div>
 			</div>    		  		
-    		<%=image_tag 'third_back.png', style:'height: 250px; margin-top: 30px; margin-left: 50px;', class: 'hidden-xs '%> 		
+    		<%=image_tag 'third_back.png', style:'height: 250px; margin-top: 30px; margin-left: 50px;', class: 'third_back hidden-xs '%> 		
  		</div>	
     	<div class="col-sm-4">
-    		<%=image_tag 'third_chair.png', style:'height: 500px; margin-top: 60px;', class: 'hidden-xs third_chair'%>
+    		<%=image_tag 'third_chair.png', style:'height: 500px; margin-top: 60px; position: absolute;', class: 'hidden-xs third_chair'%>
  		</div> 			 
     	<div class="col-sm-4">
     		<div style="margin-top: 30px;">
@@ -55,9 +55,9 @@
     			</div>
     		</div>	    
     		<div style="margin-top: 30px;">  		    		
-    		<%=image_tag 'third_1.png', style:'', class: 'hidden-xs '%> 	
-     		<%=image_tag 'third_2.png', style:'', class: 'hidden-xs '%> 	
-     		<%=image_tag 'third_3.png', style:'', class: 'hidden-xs '%> 	
+    		<%=image_tag 'third_1.png', style:'', class: 'third_1 hidden-xs '%> 	
+     		<%=image_tag 'third_2.png', style:'', class: 'third_2 hidden-xs '%> 	
+     		<%=image_tag 'third_3.png', style:'', class: 'third_3 hidden-xs '%> 	
      		</div>    		   		
  		</div> 	 				
     </div>
@@ -91,14 +91,14 @@
     	<div class="col-sm-3 col-sm-offset-1">
     		<div style="width: 400px; color:#774718; font-size: 36px; font-weight: bold; letter-spacing: 3px;">全新氣囊按壓技術<br>全身氣壓徹底包覆</div>    		    		
     		<%=image_tag 'third_3_upper.png', style:'width: 80%', class: ''%> 
-    		<%=image_tag 'third_3_c1.png', style:'', class: ''%> 		
-    		<%=image_tag 'third_3_c2.png', style:'', class: ''%> 		
-    		<%=image_tag 'third_3_c3.png', style:'', class: ''%>     				
+    		<%=image_tag 'third_3_c1.png', style:'position: absolute; top: 250px; right: 60px;', class: ''%> 		
+    		<%=image_tag 'third_3_c2.png', style:'position: absolute; top: 150px; right: 0px;', class: ''%> 		
+    		<%=image_tag 'third_3_c3.png', style:'position: absolute; top: 0px; right: -150px;', class: ''%>     				
  		</div>			
     	<div class="col-sm-4 col-sm-offset-3" style="">
-    		<%=image_tag 'third_3_c4.png', style:'position: absolute; top: 30px; left: 40px;', class: ''%> 		
-    		<%=image_tag 'third_3_c5.png', style:'position: absolute;', class: ''%> 		
-    		<%=image_tag 'third_3_c6.png', style:'position: absolute;', class: ''%> 		 		
+    		<%=image_tag 'third_3_c4.png', style:'position: absolute; top: 0px; left: 60px;', class: ''%> 		
+    		<%=image_tag 'third_3_c5.png', style:'position: absolute; top: 140px; left: 120px;', class: ''%> 		
+    		<%=image_tag 'third_3_c6.png', style:'position: absolute; top: 260px; left: 80px;', class: ''%> 		 		
  		</div> 	 		
     </div>
 	<div class="row third_3_r2 hidden-xs" style="visibility: hidden;">    
@@ -310,10 +310,33 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".third_section"})
 								.setTween(TweenMax.from(".third_3_d", 2, {right: "-80", ease: Linear.easeNone}))
 								.addTo(controller)		
-	new ScrollScene({triggerElement: ".third_section", duration: '1500', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_1_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)										
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_2_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)		
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_3_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)								
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_1", 0, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)									
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_2", 0, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_3", 0, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".third_2_section"})
+								.setTween(TweenMax.to(".third_back", 0, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)														
+	new ScrollScene({triggerElement: ".third_section", duration: '1350', triggerHook: "0.1"})
 						.setPin(".third_chair")
-						.addIndicators({name: "1 (duration: 1500)"}) // add indicators (requires plugin)
-						.addTo(controller);			
+						.addIndicators({name: "1 (duration: 1350)"}) // add indicators (requires plugin)
+						.addTo(controller);	
+						
+								
 	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.4"})
 								.setTween(TweenMax.from(".third_2_1_d", 1, {right: "-20", ease: Linear.easeNone}))
 								.addTo(controller)
@@ -331,7 +354,8 @@ $(document).ready(function($) {
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".third_2_section"})
 								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 1, ease: Linear.easeNone}))
-								.addTo(controller)	
+								.addTo(controller)								
+								
 	new ScrollScene({triggerElement: ".third_3_section"})
 								.setTween(TweenMax.to(".third_3_r1", 1, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)							
