@@ -185,13 +185,19 @@
 	<div class="row">		
     	<div class="col-sm-12">    	    		
  		</div>		
+ 	</div>	
+	<div class="row">	 	
     	<div class="col-sm-8 col-sm-offset-2 ">   
-       		<%=image_tag 'eighth_chair_1.png', style:'', class: ''%> 
-       		<%=image_tag 'eighth_chair_2.png', style:'', class: ''%> 
-       		<%=image_tag 'eighth_chair_3.png', style:'', class: ''%> 
-       		<%=image_tag 'eighth_chair_4.png', style:'', class: ''%>      		 	    		
+       		<%=image_tag 'seventh_chair_1.png', style:'visibility: hidden;', class: 'seventh_chair_1'%> 
+       		<%=image_tag 'seventh_chair_2.png', style:'visibility: hidden;', class: 'seventh_chair_2'%> 
+       		<%=image_tag 'seventh_chair_3.png', style:'visibility: hidden;', class: 'seventh_chair_3'%> 
+       		<%=image_tag 'seventh_chair_4.png', style:'visibility: hidden;', class: 'seventh_chair_4'%>      		 	    		
  		</div>
-    	<div class="col-sm-8 col-sm-offset-2">	    		
+ 	</div>	
+	<div class="row">	 		
+    	<div class="col-sm-4 col-sm-offset-2">	
+       		<%=image_tag 'seventh_search.png', style:'', class: 'seventh_search'%>      		 	    		
+       		<%=image_tag 'seventh_search_hand.png', style:'', class: 'seventh_search_hand'%>      		 	    		   		    		
  		</div> 		
     </div>
 </div>
@@ -289,7 +295,23 @@ $(document).ready(function($) {
 								.addTo(controller)
 	new ScrollScene({triggerElement: ".sixth_section"})
 								.setTween(TweenMax.to(".sixth_3", 1, {top: "80", ease: Linear.easeNone}))
-								.addTo(controller)																				  																																																																																										
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".seventh_section"})
+								.setTween(TweenMax.to(".seventh_chair_1", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".seventh_section"})
+								.setTween(TweenMax.to(".seventh_chair_2", 3, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".seventh_section"})
+								.setTween(TweenMax.to(".seventh_chair_3", 5, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".seventh_section"})
+								.setTween(TweenMax.to(".seventh_chair_4", 7, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".seventh_section"})
+		.setTween(TweenMax.fromTo(".seventh_search_hand", 1,
+				  {autoAlpha: 1},
+				  {autoAlpha: 0, repeat: -1, yoyo: true, ease: Linear.easeNone})).addTo(controller);																																																											  																																																																																										
 	/*							
 	new ScrollScene({triggerElement: ".index_background"})
 								.setTween(TweenMax.from(".conditioning", 1.8, {left: "-60", ease: Linear.easeNone}))
