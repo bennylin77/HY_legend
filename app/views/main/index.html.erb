@@ -53,39 +53,35 @@
 <section class="third_section" id="third_section">
 <div class="container-fluid">
 	<div class="row third_1_row" style="margin-top: 200px;">		
-    	<div class="col-sm-2 col-sm-offset-2">
-    		<%=image_tag 'third_slogan.png', style:'height: 60px;', class: 'third_slogan'%>
-    		<div class="third_slogan_text" style="width: 360px; color:#774718; font-size: 34px; font-weight: bold; letter-spacing: 3px;">智能穴位按摩技術<span style="font-weight: normal">＞</span></div>
-    		<div style="margin-top: 30px;" >        					
+    	<div class="col-sm-8 col-sm-offset-2">
+    		<%=image_tag 'third_slogan.png', style:'height: 60px; position: absolute;', class: 'third_slogan'%>
+    		<div class="third_slogan_text" style="position: absolute; top: 65px; width: 360px; color:#774718; font-size: 34px; font-weight: bold; letter-spacing: 3px;">智能穴位按摩技術<span style="font-weight: normal">＞</span></div>
+    		<div style="position: absolute; top: 130px;" >        					
     			<div class="third_descrip third_1_d" style="width: 250px; position: relative; right: -80px;">
     			<div class="third_descrip_title">人性化穴位感應系統</div>
     			<div class="third_descrip_cont">利用光學感應器，可準確探測身體的各大按摩穴位，其中獨特的自動檢測及微調功能，更能自動感應、依您的身體S曲線做個人化調整。</div>    			
     			</div>
 			</div>    		  		
-    		<%=image_tag 'third_back.png', style:'height: 250px; margin-top: 30px; margin-left: 50px;', class: 'third_back hidden-xs '%> 		
- 		</div>	
-    	<div class="col-sm-3">
-    		<%=image_tag 'third_chair.png', style:'height: 450px; margin-top: 60px; position: absolute;', class: 'hidden-xs third_chair'%>
- 		</div> 			 
-    	<div class="col-sm-5">
-    		<div style="margin-top: 30px;">
+    		<%=image_tag 'third_back.png',  style:'position: absolute; top: 300px; height: 220px;', class: 'third_back hidden-xs '%> 	    		
+    		<%=image_tag 'third_chair.png', style:'height: 450px; position: absolute; top: 60px; left: 250px', class: 'hidden-xs third_chair'%>		
+    		<div style="position: absolute; top: 0px; left: 660px">
     			<div class="third_descrip third_2_d" style="display: inline-block; width: 250px; position: relative; right: -90px;">
     			<div class="third_descrip_title">創新提抓技術</div>
     			<div class="third_descrip_cont">獨特按摩手法的關鍵在於：針對肩頸，先往前拉提，再向下推壓；不同於一般按摩椅，智尊椅獨有的下壓勁道更使得真人提抓按摩的舒暢感得以重現，讓您在家就能夠享受大師級的按摩手法與技術。</div>    			
     			</div>  
     		</div>
-    		<div style="margin-top: 30px;">
+    		<div style="position: absolute; top: 220px; left: 660px">
     			<div class="third_descrip third_3_d" style="display: inline-block; width: 300px; position: relative; right: -50px;">
     			<div class="third_descrip_title">背部按摩範圍+20%</div>
     			<div class="third_descrip_cont">可全面覆蓋人體背部，從肩頸、胸椎到腰椎，比傳統的背部按摩範圍增加20%以上，可滿足各類體型的人士使用，讓您充分享受專屬於您的按摩理療程式。</div>    			
     			</div>
     		</div>	    
-    		<div style="margin-top: 30px;">  		    		
+    		<div style="position: absolute; top: 380px; left: 600px">  		    		
     		<%=image_tag 'third_1.png', style:' position: absolute; height: 100px;', class: 'third_1 hidden-xs'%>	
-     		<%=image_tag 'third_2.png', style:' position: absolute; height: 100px; left: 130px;', class: 'third_2 hidden-xs'%>
-     		<%=image_tag 'third_3.png', style:' position: absolute; height: 100px; left: 246px;', class: 'third_3 hidden-xs'%>	
-     		</div>    		   		
- 		</div> 	 				
+     		<%=image_tag 'third_2.png', style:' position: absolute; height: 100px; left: 120px;', class: 'third_2 hidden-xs'%>
+     		<%=image_tag 'third_3.png', style:' position: absolute; height: 100px; left: 240px;', class: 'third_3 hidden-xs'%>	
+     		</div>     		
+ 		</div> 			  	 				
     </div>
 </div>
 </section>
@@ -328,40 +324,40 @@ $(document).ready(function($) {
 										
 
 								
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_slogan", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_slogan_text", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)																
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_1_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)										
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_2_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)		
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_3_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)								
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_1", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)									
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_2", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_3", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_back", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
 
-/*								
+							
 	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
 						.setPin(".third_back")
 						.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);	
-*/																											
+																										
 	new ScrollScene({triggerElement: ".third_section", duration: '1350', triggerHook: "0.1"})
 						.setPin(".third_chair")
 						.addIndicators({name: "1 (duration: 1350)"}) // add indicators (requires plugin)
