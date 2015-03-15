@@ -14,7 +14,7 @@
 			<iframe style="position: absolute; top: 290px; border: 1px solid #6b5431;" width="340" height="200" src="https://www.youtube.com/embed/nCkpzqqog4k" frameborder="0" allowfullscreen></iframe>
  		</div>
     	<div class="col-sm-3 hidden-xs hidden-sm">	 				
- 			<%=image_tag 'first_man.png', style:'height: 550px; visibility: hidden; position: absolute; left: 150px;', class: 'first_man'%> 
+ 			<%=image_tag 'first_man.png', style:'height: 550px; visibility: hidden; position: absolute; left: 250px;', class: 'first_man'%> 
  			<div style="color: #ffffff; width: 70px; position: absolute; left: 460px; top: 340px;">輝葉代言人<br>任&emsp;達&emsp;華</div>
 		</div>
     </div>   		    
@@ -38,8 +38,8 @@
     	<div class="hidden-xs col-sm-4 col-sm-offset-2">
     		<%=image_tag 'sec_figure.png', style:'height: 450px;', class: 'center-block'%>
  		</div>		
-    	<div class="col-sm-4" style="padding-left: 20px;">
-    		<div style="position: relative; top: 100px;" class='sec_figure'>
+    	<div class="col-sm-4" style="">
+    		<div style="position: relative; top: 100px; left: 50%; margin-left: -200px;" class='sec_figure'>
 	    		<div style="width: 400px; margin-top: 70px; font-size: 30px; letter-spacing: 1.9px;">輝葉<span style="font-size: 45px;">30</span>始終關心您的健康</div>
 	    		<div style="width: 400px; padding-bottom: 5px;font-size: 16px; letter-spacing: 4px; border-bottom: 1px solid;">一直以來，我們堅持用時間細磨出高端品質</div>
 	    		<div style="width: 400px; margin-top: 10px; font-size: 13px; letter-spacing: 4px; line-height: 24px;" class="hidden-xs">
@@ -53,34 +53,32 @@
 <section class="third_section" id="third_section">
 <div class="container-fluid">
 	<div class="row third_1_row" style="margin-top: 110px;">		
-    	<div class="col-sm-6 col-sm-offset-2">
-    		<%=image_tag 'third_slogan.png', style:'height: 60px; position: absolute;', class: 'third_slogan'%>
+    	<div class="col-sm-8 col-sm-offset-2">
+    		<%=image_tag 'third_slogan.png', style:'z-index:1; height: 60px; position: absolute;', class: 'third_slogan'%>
     		<div class="third_slogan_text" style="position: absolute; top: 65px; width: 360px; color:#774718; font-size: 34px; font-weight: bold; letter-spacing: 3px;">智能穴位按摩技術<span style="font-weight: normal">＞</span></div>
-    		<div style="position: absolute; top: 130px;" >        					
+    		<div style="z-index:1; position: absolute; top: 130px;" >        					
     			<div class="third_descrip third_1_d" style="width: 250px; position: relative; right: -80px;">
     			<div class="third_descrip_title">人性化穴位感應系統</div>
     			<div class="third_descrip_cont">利用光學感應器，可準確探測身體的各大按摩穴位，其中獨特的自動檢測及微調功能，更能自動感應、依您的身體S曲線做個人化調整。</div>    			
     			</div>
 			</div>    		  		
     		<%=image_tag 'third_back.png',  style:'position: absolute; top: 300px; height: 220px;', class: 'third_back hidden-xs '%> 	    		
-    		<%=image_tag 'third_chair.png', style:'height: 450px; position: absolute; top: 60px; left: 250px', class: 'hidden-xs third_chair'%>		
-    		<div style="position: absolute; top: 0px; left: 660px">
+    		<%=image_tag 'third_chair.png', style:'z-index:0; height: 450px; position: absolute; top: 60px; left: 50%; margin-left: -206px;', class: 'hidden-xs hidden-sm third_chair'%>		
+    		<div style="position: absolute; top: 0px; right: 0px">
     			<div class="third_descrip third_2_d" style="display: inline-block; width: 250px; position: relative; right: -90px;">
     			<div class="third_descrip_title">創新提抓技術</div>
     			<div class="third_descrip_cont">獨特按摩手法的關鍵在於：針對肩頸，先往前拉提，再向下推壓；不同於一般按摩椅，智尊椅獨有的下壓勁道更使得真人提抓按摩的舒暢感得以重現，讓您在家就能夠享受大師級的按摩手法與技術。</div>    			
     			</div>  
     		</div>
-    		<div style="position: absolute; top: 210px; left: 660px">
-    			<div class="third_descrip third_3_d" style="display: inline-block; width: 340px; position: relative; right: -50px;">
+    		<div style="position: absolute; top: 210px; right: -100px">
+    			<div class="third_descrip third_3_d" style="display: inline-block; width: 340px;">
     			<div class="third_descrip_title">背部按摩範圍+20%</div>
     			<div class="third_descrip_cont">可全面覆蓋人體背部，從肩頸、胸椎到腰椎，比傳統的背部按摩範圍增加20%以上，可滿足各類體型的人士使用，讓您充分享受專屬於您的按摩理療程式。</div>    			
     			</div>
-    		</div>	    
-    		<div style="position: absolute; top: 380px; left: 650px">  		    		
-    		<%=image_tag 'third_1.png', style:' position: absolute; height: 100px;', class: 'third_1 hidden-xs'%>	
-     		<%=image_tag 'third_2.png', style:' position: absolute; height: 100px; left: 120px;', class: 'third_2 hidden-xs'%>
-     		<%=image_tag 'third_3.png', style:' position: absolute; height: 100px; left: 240px;', class: 'third_3 hidden-xs'%>	
-     		</div>     		
+    		</div>	    		    		
+    		<%=image_tag 'third_1.png', style:' position: absolute; top: 370px; right: 240px; height: 100px;', class: 'third_1 hidden-xs'%>	
+     		<%=image_tag 'third_2.png', style:' position: absolute; top: 370px; right: 120px; height: 100px;', class: 'third_2 hidden-xs'%>
+     		<%=image_tag 'third_3.png', style:' position: absolute; top: 370px; right: 0px; height: 100px;', class: 'third_3 hidden-xs'%>	  		
  		</div> 			  	 				
     </div>
 </div>
@@ -88,14 +86,14 @@
 <section class="third_2_section">
 <div class="container-fluid">
 	<div class="row">
-    	<div class="col-sm-6 col-sm-offset-2">
+    	<div class="col-sm-8 col-sm-offset-2">
     		<%=image_tag 'third_2_slogan.png', style:'position: absolute; top: 0px; height: 60px;', class: 'third_2_slogan'%>
     		<div class="third_2_slogan_text" style="position: absolute; top: 65px; width: 380px; color:#774718; font-size: 34px; font-weight: bold; letter-spacing: 3px;">360°全包覆足底按摩<span style="font-weight: normal">＞</span></div>    			
     		<div class="third_descrip third_2_1_d" style="position: absolute; top: 130px; left: 60px; display: inline-block; width: 250px;">
     			<div class="third_descrip_cont">以真人手感結合先進滾輪技術，提供專業按摩師般的刮痧按摩方式，對足底湧泉穴進行按摩，無論是輕柔穩定或是漸進是強力按摩，都能帶來前所未有的舒適和暢快。並針對腿部採氣囊加強，形狀各異的氣囊完整包覆小腿、腳踝及足部，對足三里穴、太溪穴、崑崙進行按摩、壓緊、停頓、放鬆的交互氣壓動做按摩方式，讓您到通體順暢，天人合一的境界。</div>    			
     		</div> 			
-    		<%=image_tag 'third_2_circle.png', style:'position: absolute; top: 0px; left: 700px; height: 220px;', class: 'third_2_circle hidden-xs '%>
-    		<div class="third_2_feet" style="position: absolute; top: 300px; left: 680px;">
+    		<%=image_tag 'third_2_circle.png', style:'position: absolute; top: 0px; right: 160px; height: 220px;', class: 'third_2_circle hidden-xs '%>
+    		<div class="third_2_feet" style="position: absolute; top: 300px; right: 280px;">
     		<%=image_tag 'third_2_feet_1.png', style:'position: absolute; height: 160px;', class: 'hidden-xs '%>
     		<%=image_tag 'third_2_feet_2.png', style:'position: absolute; height: 160px; left: 180px;', class: 'hidden-xs '%>
 			</div>
@@ -106,17 +104,17 @@
 <section class="third_3_section" id="third_3_section">
 <div class="container-fluid">
 	<div class="row third_3_r1" style="height: 500px; visibility: hidden; margin-top: 100px;">			
-    	<div class="col-sm-6 col-sm-offset-2" style=""> 
+    	<div class="col-sm-8 col-sm-offset-2" style=""> 
     		<div style="position: absolute; width: 340px; color:#774718; font-size: 35.5px; font-weight: bold; letter-spacing: 3px;">全新氣囊按壓技術<br>全身氣壓徹底包覆</div>    		    		    		    		
     		<%=image_tag 'third_3_c1.png', style:'position: absolute; top: 270px; left: 200px;', class: ''%> 		
     		<%=image_tag 'third_3_c2.png', style:'position: absolute; top: 170px; left: 280px;', class: ''%> 		
     		<%=image_tag 'third_3_c3.png', style:'position: absolute; top: 10px; left: 400px;', class: 'hidden-xs hidden-sm'%>       		
-    		<%=image_tag 'third_3_c4.png', style:'position: absolute; top: 0px; left: 750px;', class: ''%> 		
-    		<%=image_tag 'third_3_c5.png', style:'position: absolute; top: 200px; left: 830px;', class: ''%> 		
-    		<%=image_tag 'third_3_c6.png', style:'position: absolute; top: 340px; left: 720px;', class: ''%>  
+    		<%=image_tag 'third_3_c4.png', style:'position: absolute; top: 0px; right: 100px;', class: ''%> 		
+    		<%=image_tag 'third_3_c5.png', style:'position: absolute; top: 200px; right: 10px;', class: ''%> 		
+    		<%=image_tag 'third_3_c6.png', style:'position: absolute; top: 340px; right: 120px;', class: ''%>  
     		<%=image_tag 'third_3_text.png', style:'position: absolute; top: 450px; width: 200px', class: ''%> 		        	
     		<%=image_tag 'third_3_circle.png', style:'position: absolute; top: 500px; width: 500px', class: ''%> 	
-    		<%=image_tag 'third_3_star.png', style:'position: absolute; top: 500px; left: 600px; width: 450px'%> 	    		    		  				 		
+    		<%=image_tag 'third_3_star.png', style:'position: absolute; top: 500px; right: 0px; width: 450px'%> 	    		    		  				 		
  		</div> 	 		
     </div>			
 </div>
