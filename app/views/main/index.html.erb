@@ -1,9 +1,13 @@
 <section class="first_section">
 <div class="container-fluid">
 	<div class="row">	
-    	<div class="col-sm-10 col-sm-offset-2">	
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/MYSVMgRr6pw" frameborder="0" allowfullscreen></iframe>
- 		</div>		
+    	<div class="col-sm-5 col-sm-offset-2">	
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/nCkpzqqog4k" frameborder="0" allowfullscreen></iframe>
+ 		
+ 		</div>
+    	<div class="col-sm-5">	 				
+ 			<%=image_tag 'first_man.png', style:'height: 700px; visibility: hidden; ', class: 'first_man'%> 
+		</div>
     </div>
 </div>
 </section>
@@ -285,6 +289,9 @@ $(document).ready(function($) {
 	// init controller
 	controller = new ScrollMagic();
 	// build scenes
+	new ScrollScene({triggerElement: ".first_section"})
+								.setTween(TweenMax.to(".first_man", 3, {autoAlpha: 1, ease: Linear.easeNone}))
+								.addTo(controller)		
 	new ScrollScene({triggerElement: ".second_section"})
 								.setTween(TweenMax.to(".sec_figure", 2, {top: "20", ease: Linear.easeNone}))
 								.addTo(controller)
@@ -349,7 +356,7 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".third_2_section"})
 								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
-								
+/*								
 	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.1"})
 								.setTween(TweenMax.to(".third_2_1_d", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)																																
@@ -365,15 +372,15 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.1"})
 								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)																
-								
+*/								
 	new ScrollScene({triggerElement: ".third_3_section"})
-								.setTween(TweenMax.to(".third_3_r1", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".third_3_r1", 2, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)							
 	new ScrollScene({triggerElement: ".third_3_section"})
-								.setTween(TweenMax.to(".third_3_r2", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".third_3_r2", 2, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)
 	new ScrollScene({triggerElement: ".third_3_section"})
-								.setTween(TweenMax.to(".third_3_r3", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".third_3_r3", 2, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)								
 								
 								
