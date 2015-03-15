@@ -15,13 +15,14 @@
  			<div style="color: #ffffff; position: absolute; top: 470px;">TVC: 家有智慧篇</div>
  		</div>
     	<div class="col-sm-3">	 				
- 			<%=image_tag 'first_man.png', style:'height: 600px; visibility: hidden; ', class: 'first_man'%> 
- 			<div style="color: #ffffff; position: absolute; left: 380px; top: 340px;">輝葉代言人<br>任&emsp;達&emsp;華</div>
+ 			<%=image_tag 'first_man.png', style:'height: 550px; visibility: hidden; position: absolute; left: 150px;', class: 'first_man'%> 
+ 			<div style="color: #ffffff; width: 70px; position: absolute; left: 460px; top: 340px;">輝葉代言人<br>任&emsp;達&emsp;華</div>
 		</div>		
     </div>
+<!--    
 	<div class="row">
         <div class="col-sm-12" id="myScrollspy">
-            <ul class="nav nav-tabs affix-bottom" data-spy="affix" data-offset-top="195">
+            <ul class="nav nav-tabs affix-bottom" data-spy="affix" data-offset-top="500">
                 <li><a href="#third_section">全球唯一雙首創</a></li>
                 <li><a href="#third_3_section">六大氣囊</a></li>
                 <li><a href="#forth_section">智尊六大功能</a></li>
@@ -30,7 +31,8 @@
                 <li><a href="#eight_section">聯絡我們</a></li>                
             </ul>
         </div>
-    </div>        
+    </div>
+-->            
 </div>        
 </section>
 <section class="second_section">	
@@ -53,7 +55,7 @@
 </section>
 <section class="third_section" id="third_section">
 <div class="container-fluid">
-	<div class="row" style="margin-top: 100px;">		
+	<div class="row" style="margin-top: 60px;">		
     	<div class="col-sm-2 col-sm-offset-2">
     		<%=image_tag 'third_slogan.png', style:'height: 60px;', class: 'third_slogan'%>
     		<div class="third_slogan_text" style="width: 360px; color:#774718; font-size: 34px; font-weight: bold; letter-spacing: 3px;">智能穴位按摩技術<span style="font-weight: normal">＞</span></div>
@@ -114,7 +116,7 @@
 </section>
 <section class="third_3_section" id="third_3_section">
 <div class="container-fluid">
-	<div class="row third_3_r1" style="height: 500px; visibility: hidden;">
+	<div class="row third_3_r1" style="height: 500px; visibility: hidden; margin-top: 100px;">
     	<div class="col-sm-3 col-sm-offset-2">
     		<div style="width: 340px; color:#774718; font-size: 35.5px; font-weight: bold; letter-spacing: 3px;">全新氣囊按壓技術<br>全身氣壓徹底包覆</div>    		    		
     		<%=image_tag 'third_3_upper.png', style:'height: 62px;', class: ''%>   				
@@ -159,7 +161,7 @@
     </div>
 </div>
 </section>
-<section class="fifth_section">
+<section class="fifth_section" id="fifth_section">
 <div class="container-fluid">
 	<div class="row" style="margin-top: 150px;">		
     	<div class="col-sm-8 col-sm-offset-2 hidden-sm hidden-xs " style="background: #f7f2e9; border-radius: 25px; padding: 10px;">    	
@@ -188,7 +190,7 @@
     </div>          
 </div>
 </section>
-<section class="sixth_section">
+<section class="sixth_section" id="sixth_section">
 <div class="container-fluid">
 	<div class="row" style="margin-top: 130px;">		
     	<div class="col-sm-offset-2 col-sm-10">  
@@ -274,7 +276,7 @@
     </div>
 </div>
 </section>
-<section class="eighth_section">
+<section class="eighth_section" id="eight_section">
 <div class="container-fluid">
 	<div class="row">		
     	<div class="col-sm-2 col-sm-offset-2">    	 
@@ -327,31 +329,31 @@ $(document).ready(function($) {
 								.setTween(TweenMax.from(".third_3_d", 2, {right: "-80", ease: Linear.easeNone}))
 								.addTo(controller)		
 										
-	new ScrollScene({triggerElement: ".third_section", triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
 								.setTween(TweenMax.to(".third_slogan", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
-	new ScrollScene({triggerElement: ".third_section", triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
 								.setTween(TweenMax.to(".third_slogan_text", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)																
-	new ScrollScene({triggerElement: ".third_section", triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
 								.setTween(TweenMax.to(".third_1_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)										
-	new ScrollScene({triggerElement: ".third_section", triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
 								.setTween(TweenMax.to(".third_2_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)		
-	new ScrollScene({triggerElement: ".third_section", triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
 								.setTween(TweenMax.to(".third_3_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)								
-	new ScrollScene({triggerElement: ".third_section", triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
 								.setTween(TweenMax.to(".third_1", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)									
-	new ScrollScene({triggerElement: ".third_section", triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
 								.setTween(TweenMax.to(".third_2", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)
-	new ScrollScene({triggerElement: ".third_section", triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
 								.setTween(TweenMax.to(".third_3", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)
-	new ScrollScene({triggerElement: ".third_section", triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "1"})
 								.setTween(TweenMax.to(".third_back", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)														
 	new ScrollScene({triggerElement: ".third_section", duration: '1350', triggerHook: "0.1"})
