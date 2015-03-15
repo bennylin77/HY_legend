@@ -67,7 +67,7 @@
 <div class="container-fluid">
 	<div class="row">
     	<div class="col-sm-2 col-sm-offset-2">
-    		<%=image_tag 'third_2_slogan.png', style:'visibility: hidden;', class: 'third_2_slogan'%>
+    		<%=image_tag 'third_2_slogan.png', style:'visibility: hidden; height: 60px;', class: 'third_2_slogan'%>
     		<div class="third_2_slogan_text" style="visibility: hidden; width: 360px; color:#774718; font-size: 32px; font-weight: bold; letter-spacing: 3px;">360°全包覆足底按摩<span style="font-weight: normal">＞</span></div>    			
     		<div class="third_descrip third_2_1_d" style="visibility: hidden; display: inline-block; width: 250px; position: relative; right: -70px; top: 40px;">
     			<div class="third_descrip_cont">以真人手感結合先進滾輪技術，提供專業按摩師般的刮痧按摩方式，對足底湧泉穴進行按摩，無論是輕柔穩定或是漸進是強力按摩，都能帶來前所未有的舒適和暢快。並針對腿部採氣囊加強，形狀各異的氣囊完整包覆小腿、腳踝及足部，對足三里穴、太溪穴、崑崙進行按摩、壓緊、停頓、放鬆的交互氣壓動做按摩方式，讓您到通體順暢，天人合一的境界。</div>    			
@@ -76,10 +76,10 @@
     	<div class="col-sm-3" style="">
  		</div> 		
     	<div class="col-sm-4" style="">
-    		<div><%=image_tag 'third_2_circle.png', style:'margin-left:90px; visibility: hidden; height: 150px;', class: 'third_2_circle hidden-xs '%></div>
-    		<div class="third_2_feet" style="margin-top: 50px; visibility: hidden;">
-    		<%=image_tag 'third_2_feet_1.png', style:'height: 190px;', class: 'hidden-xs '%>
-    		<%=image_tag 'third_2_feet_2.png', style:'height: 190px;', class: 'hidden-xs '%>
+    		<div><%=image_tag 'third_2_circle.png', style:'margin-left:90px; margin-top: 40px; visibility: hidden; height: 220px;', class: 'third_2_circle hidden-xs '%></div>
+    		<div class="third_2_feet" style="margin-top: 60px; margin-left: 0px;visibility: hidden;">
+    		<%=image_tag 'third_2_feet_1.png', style:'position: absolute; height: 160px;', class: 'hidden-xs '%>
+    		<%=image_tag 'third_2_feet_2.png', style:'position: absolute; height: 160px; left: 180px;', class: 'hidden-xs '%>
 			</div>
  		</div>
     </div>
@@ -88,7 +88,7 @@
 <section class="third_3_section">
 <div class="container-fluid">
 	<div class="row third_3_r1" style="height: 500px; visibility: hidden;">
-    	<div class="col-sm-3 col-sm-offset-1">
+    	<div class="col-sm-3 col-sm-offset-2">
     		<div style="width: 340px; color:#774718; font-size: 32px; font-weight: bold; letter-spacing: 3px;">全新氣囊按壓技術<br>全身氣壓徹底包覆</div>    		    		
     		<%=image_tag 'third_3_upper.png', style:'width: 80%', class: ''%> 
     		<%=image_tag 'third_3_c1.png', style:'position: absolute; top: 250px; right: 60px;', class: ''%> 		
@@ -102,15 +102,15 @@
  		</div> 	 		
     </div>
 	<div class="row third_3_r2 hidden-xs" style="visibility: hidden;">    
-        <div class="col-sm-3 col-sm-offset-1" style="">
+        <div class="col-sm-3 col-sm-offset-2" style="">
     		<%=image_tag 'third_3_text.png', style:'', class: ''%> 		        	
  		</div>		 
     </div>    
 	<div class="row  third_3_r3 hidden-xs " style="visibility: hidden;">    
-        <div class="col-sm-4 col-sm-offset-1" style="">
+        <div class="col-sm-4 col-sm-offset-2" style="">
     		<%=image_tag 'third_3_circle.png', style:'width: 90%', class: ''%> 		        	
  		</div>
-         <div class="col-sm-3 col-sm-offset-2" style="">
+         <div class="col-sm-3 col-sm-offset-1" style="">
     		<%=image_tag 'third_3_star.png', style:'width: 100%', class: 'center-block'%> 		        	         	
  		</div> 		 
     </div> 			
@@ -361,7 +361,23 @@ $(document).ready(function($) {
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".third_2_section"})
 								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 1, ease: Linear.easeNone}))
-								.addTo(controller)								
+								.addTo(controller)	
+								
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.1"})
+								.setTween(TweenMax.to(".third_2_1_d", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)																																
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.1"})
+								.setTween(TweenMax.to(".third_2_circle", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.1"})
+								.setTween(TweenMax.to(".third_2_slogan", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.1"})
+								.setTween(TweenMax.to(".third_2_feet", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.1"})
+								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)																
 								
 	new ScrollScene({triggerElement: ".third_3_section"})
 								.setTween(TweenMax.to(".third_3_r1", 1, {autoAlpha: 1, ease: Linear.easeNone}))
