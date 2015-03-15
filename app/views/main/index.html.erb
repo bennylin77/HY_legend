@@ -105,35 +105,23 @@
 </section>
 <section class="third_3_section" id="third_3_section">
 <div class="container-fluid">
-	<div class="row third_3_r1" style="height: 500px; visibility: hidden; margin-top: 100px;">
-    	<div class="col-sm-3 col-sm-offset-2">
-    		<div style="width: 340px; color:#774718; font-size: 35.5px; font-weight: bold; letter-spacing: 3px;">全新氣囊按壓技術<br>全身氣壓徹底包覆</div>    		    		
-    		<%=image_tag 'third_3_upper.png', style:'height: 62px;', class: ''%>   				
- 		</div>			
-    	<div class="col-sm-3" style=""> 
-    		<%=image_tag 'third_3_c1.png', style:'position: absolute; top: 270px; left: -200px;', class: ''%> 		
-    		<%=image_tag 'third_3_c2.png', style:'position: absolute; top: 170px; left: -120px;', class: ''%> 		
-    		<%=image_tag 'third_3_c3.png', style:'position: absolute; top: 10px; left: 0px;', class: 'hidden-xs hidden-sm'%>       		
-    		<%=image_tag 'third_3_c4.png', style:'position: absolute; top: 0px; left: 350px;', class: ''%> 		
-    		<%=image_tag 'third_3_c5.png', style:'position: absolute; top: 200px; left: 430px;', class: ''%> 		
-    		<%=image_tag 'third_3_c6.png', style:'position: absolute; top: 340px; left: 320px;', class: ''%>    				 		
+	<div class="row third_3_r1" style="height: 500px; visibility: hidden; margin-top: 100px;">			
+    	<div class="col-sm-6 col-sm-offset-2" style=""> 
+    		<div style="position: absolute; width: 340px; color:#774718; font-size: 35.5px; font-weight: bold; letter-spacing: 3px;">全新氣囊按壓技術<br>全身氣壓徹底包覆</div>    		    		    		    		
+    		<%=image_tag 'third_3_c1.png', style:'position: absolute; top: 270px; left: 200px;', class: ''%> 		
+    		<%=image_tag 'third_3_c2.png', style:'position: absolute; top: 170px; left: 280px;', class: ''%> 		
+    		<%=image_tag 'third_3_c3.png', style:'position: absolute; top: 10px; left: 400px;', class: 'hidden-xs hidden-sm'%>       		
+    		<%=image_tag 'third_3_c4.png', style:'position: absolute; top: 0px; left: 750px;', class: ''%> 		
+    		<%=image_tag 'third_3_c5.png', style:'position: absolute; top: 200px; left: 830px;', class: ''%> 		
+    		<%=image_tag 'third_3_c6.png', style:'position: absolute; top: 340px; left: 720px;', class: ''%>  
+    		<%=image_tag 'third_3_text.png', style:'position: absolute; top: 450px; width: 200px', class: ''%> 		        	
+    		<%=image_tag 'third_3_circle.png', style:'position: absolute; top: 500px; width: 500px', class: ''%> 	
+    		<%=image_tag 'third_3_star.png', style:'position: absolute; top: 500px; left: 600px; width: 450px'%> 	    		    		  				 		
  		</div> 	 		
-    </div>
-	<div class="row third_3_r2 hidden-xs" style="visibility: hidden;">    
-        <div class="col-sm-3 col-sm-offset-2" style="">
-    		<%=image_tag 'third_3_text.png', style:'', class: ''%> 		        	
- 		</div>		 
-    </div>    
-	<div class="row  third_3_r3 hidden-xs " style="visibility: hidden;">    
-        <div class="col-sm-4 col-sm-offset-2" style="">
-    		<%=image_tag 'third_3_circle.png', style:'width: 90%', class: ''%> 		        	
- 		</div>
-         <div class="col-sm-3 col-sm-offset-1" style="">
-    		<%=image_tag 'third_3_star.png', style:'width: 100%', class: 'center-block'%> 		        	         	
- 		</div> 		 
-    </div> 			
+    </div>			
 </div>
 </section>
+<!--
 <section class="forth_section" id="forth_section">
 <div class="container-fluid">
 	<div class="row" style="margin-top: 130px;">		
@@ -262,7 +250,7 @@
  		</div> 	 			
     </div>
 </div>
-</section>
+</section>-->
 <section class="eighth_section" id="eight_section">
 <div class="container-fluid">
 	<div class="row">		
@@ -387,23 +375,23 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_back", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)							
-/*														
-	new ScrollScene({triggerElement: ".third_2_section"})
-								.setTween(TweenMax.to(".third_2_1_d", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+													
+	new ScrollScene({triggerElement: ".third_3_section"})
+								.setTween(TweenMax.to(".third_2_1_d", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)																																
-	new ScrollScene({triggerElement: ".third_2_section"})
-								.setTween(TweenMax.to(".third_2_circle", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+	new ScrollScene({triggerElement: ".third_3_section"})
+								.setTween(TweenMax.to(".third_2_circle", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
-	new ScrollScene({triggerElement: ".third_2_section"})
-								.setTween(TweenMax.to(".third_2_slogan", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+	new ScrollScene({triggerElement: ".third_3_section"})
+								.setTween(TweenMax.to(".third_2_slogan", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
-	new ScrollScene({triggerElement: ".third_2_section"})
-								.setTween(TweenMax.to(".third_2_feet", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+	new ScrollScene({triggerElement: ".third_3_section"})
+								.setTween(TweenMax.to(".third_2_feet", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
-	new ScrollScene({triggerElement: ".third_2_section"})
-								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 1, ease: Linear.easeNone}))
+	new ScrollScene({triggerElement: ".third_3_section"})
+								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
-*/		
+		
 	new ScrollScene({triggerElement: ".third_2_section", duration: '400', triggerHook: "0.3"})
 						.setPin(".third_2_1_d")
 						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
