@@ -52,8 +52,8 @@
 </section>
 <section class="third_section" id="third_section">
 <div class="container-fluid">
-	<div class="row third_1_row" style="margin-top: 200px;">		
-    	<div class="col-sm-8 col-sm-offset-2">
+	<div class="row third_1_row" style="margin-top: 110px;">		
+    	<div class="col-sm-6 col-sm-offset-2">
     		<%=image_tag 'third_slogan.png', style:'height: 60px; position: absolute;', class: 'third_slogan'%>
     		<div class="third_slogan_text" style="position: absolute; top: 65px; width: 360px; color:#774718; font-size: 34px; font-weight: bold; letter-spacing: 3px;">智能穴位按摩技術<span style="font-weight: normal">＞</span></div>
     		<div style="position: absolute; top: 130px;" >        					
@@ -76,7 +76,7 @@
     			<div class="third_descrip_cont">可全面覆蓋人體背部，從肩頸、胸椎到腰椎，比傳統的背部按摩範圍增加20%以上，可滿足各類體型的人士使用，讓您充分享受專屬於您的按摩理療程式。</div>    			
     			</div>
     		</div>	    
-    		<div style="position: absolute; top: 380px; left: 600px">  		    		
+    		<div style="position: absolute; top: 380px; left: 650px">  		    		
     		<%=image_tag 'third_1.png', style:' position: absolute; height: 100px;', class: 'third_1 hidden-xs'%>	
      		<%=image_tag 'third_2.png', style:' position: absolute; height: 100px; left: 120px;', class: 'third_2 hidden-xs'%>
      		<%=image_tag 'third_3.png', style:' position: absolute; height: 100px; left: 240px;', class: 'third_3 hidden-xs'%>	
@@ -88,18 +88,14 @@
 <section class="third_2_section">
 <div class="container-fluid">
 	<div class="row">
-    	<div class="col-sm-2 col-sm-offset-2">
-    		<%=image_tag 'third_2_slogan.png', style:'visibility: hidden; height: 60px;', class: 'third_2_slogan'%>
-    		<div class="third_2_slogan_text" style="visibility: hidden; width: 380px; color:#774718; font-size: 34px; font-weight: bold; letter-spacing: 3px;">360°全包覆足底按摩<span style="font-weight: normal">＞</span></div>    			
-    		<div class="third_descrip third_2_1_d" style="visibility: hidden; display: inline-block; width: 250px; position: relative; right: -70px; top: 40px;">
+    	<div class="col-sm-6 col-sm-offset-2">
+    		<%=image_tag 'third_2_slogan.png', style:'position: absolute; top: 0px; height: 60px;', class: 'third_2_slogan'%>
+    		<div class="third_2_slogan_text" style="position: absolute; top: 65px; width: 380px; color:#774718; font-size: 34px; font-weight: bold; letter-spacing: 3px;">360°全包覆足底按摩<span style="font-weight: normal">＞</span></div>    			
+    		<div class="third_descrip third_2_1_d" style="position: absolute; top: 130px; left: 60px; display: inline-block; width: 250px;">
     			<div class="third_descrip_cont">以真人手感結合先進滾輪技術，提供專業按摩師般的刮痧按摩方式，對足底湧泉穴進行按摩，無論是輕柔穩定或是漸進是強力按摩，都能帶來前所未有的舒適和暢快。並針對腿部採氣囊加強，形狀各異的氣囊完整包覆小腿、腳踝及足部，對足三里穴、太溪穴、崑崙進行按摩、壓緊、停頓、放鬆的交互氣壓動做按摩方式，讓您到通體順暢，天人合一的境界。</div>    			
     		</div> 			
- 		</div>		
-    	<div class="col-sm-3" style="">
- 		</div> 		
-    	<div class="col-sm-4" style="">
-    		<div><%=image_tag 'third_2_circle.png', style:'margin-left:90px; margin-top: 40px; visibility: hidden; height: 220px;', class: 'third_2_circle hidden-xs '%></div>
-    		<div class="third_2_feet" style="margin-top: 60px; margin-left: 0px;visibility: hidden;">
+    		<%=image_tag 'third_2_circle.png', style:'position: absolute; top: 0px; left: 700px; height: 220px;', class: 'third_2_circle hidden-xs '%>
+    		<div class="third_2_feet" style="position: absolute; top: 300px; left: 680px;">
     		<%=image_tag 'third_2_feet_1.png', style:'position: absolute; height: 160px;', class: 'hidden-xs '%>
     		<%=image_tag 'third_2_feet_2.png', style:'position: absolute; height: 160px; left: 180px;', class: 'hidden-xs '%>
 			</div>
@@ -228,9 +224,7 @@
     		<p class="text-center" style="font-size: 15px;">產品規格</p>
 			<dl class="dl-horizontal sixth_list">
 			  <dt>椅背直立</dt><dd>142（長）x 76（寬）x123（高）</dd>
-			  <dt>椅背後仰</dt><dd>142（長）x 76（寬）x123（高）</dd>
-			  <dt>淨 重</dt><dd>約126公斤</dd>
-			  <dt>主機保固</dt><dd>1年</dd>		  			  			  			  
+			  <dt>椅背後仰</dt><dd>142（長）x 76（寬）x123（高）</dd>	  			  			  			  
 			</dl> 
 			</div> 						
  		</div> 		
@@ -323,81 +317,78 @@ $(document).ready(function($) {
 								.setTween(TweenMax.from(".third_3_d", 1, {left: "100", ease: Linear.easeNone}))
 								.addTo(controller)		
     */																	
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
-								.setTween(TweenMax.to(".third_slogan", 0, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)	
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
-								.setTween(TweenMax.to(".third_slogan_text", 0, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)																
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
-								.setTween(TweenMax.to(".third_1_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)										
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
-								.setTween(TweenMax.to(".third_2_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)		
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
-								.setTween(TweenMax.to(".third_3_d", 0, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)								
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
-								.setTween(TweenMax.to(".third_1", 0, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)									
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
-								.setTween(TweenMax.to(".third_2", 0, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
-								.setTween(TweenMax.to(".third_3", 0, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
-								.setTween(TweenMax.to(".third_back", 0, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)	
-
-	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+	
+	new ScrollScene({triggerElement: ".third_section", duration: '400', triggerHook: "0.1"})
 						.setPin(".third_slogan")
 						.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);	
-	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '400', triggerHook: "0.1"})
 						.setPin(".third_slogan_text")
 						.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);	
-	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '400', triggerHook: "0.1"})
 						.setPin(".third_1_d")
 						.addIndicators({name: "3 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);	
-	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '400', triggerHook: "0.1"})
 						.setPin(".third_2_d")
 						.addIndicators({name: "4 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);								
-	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '400', triggerHook: "0.1"})
 						.setPin(".third_3_d")
 						.addIndicators({name: "5 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);	
-	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '400', triggerHook: "0.1"})
 						.setPin(".third_1")
 						.addIndicators({name: "6 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);							
-	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '400', triggerHook: "0.1"})
 						.setPin(".third_2")
 						.addIndicators({name: "7 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);							
-	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '400', triggerHook: "0.1"})
 						.setPin(".third_3")
 						.addIndicators({name: "8 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);	
-	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '400', triggerHook: "0.1"})
 						.setPin(".third_back")
 						.addIndicators({name: "9 (duration: 300)"}) // add indicators (requires plugin)
-						.addTo(controller);																			
+						.addTo(controller);																														
 																										
 	new ScrollScene({triggerElement: ".third_section", duration: '1350', triggerHook: "0.1"})
 						.setPin(".third_chair")
-						.addIndicators({name: "10 (duration: 1350)"}) // add indicators (requires plugin)
+						.addIndicators({name: "10 (duration: 1800)"}) // add indicators (requires plugin)
 						.addTo(controller);	
 						
-								
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.4"})
-								.setTween(TweenMax.from(".third_2_1_d", 1, {right: "-20", ease: Linear.easeNone}))
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_slogan", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)	
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_slogan_text", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)																
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_1_d", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)										
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_2_d", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)		
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_3_d", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)								
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_1", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)									
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_2", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)
-	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.4"})
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_3", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)
+	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_back", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)							
+/*														
+	new ScrollScene({triggerElement: ".third_2_section"})
 								.setTween(TweenMax.to(".third_2_1_d", 1, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)																																
 	new ScrollScene({triggerElement: ".third_2_section"})
@@ -412,6 +403,28 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".third_2_section"})
 								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
+*/		
+	new ScrollScene({triggerElement: ".third_2_section", duration: '400', triggerHook: "0.3"})
+						.setPin(".third_2_1_d")
+						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
+						.addTo(controller);
+	new ScrollScene({triggerElement: ".third_2_section", duration: '400', triggerHook: "0.3"})
+						.setPin(".third_2_circle")
+						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
+						.addTo(controller);
+	new ScrollScene({triggerElement: ".third_2_section", duration: '400', triggerHook: "0.3"})
+						.setPin(".third_2_slogan")
+						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
+						.addTo(controller);
+	new ScrollScene({triggerElement: ".third_2_section", duration: '400', triggerHook: "0.3"})
+						.setPin(".third_2_feet")
+						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
+						.addTo(controller);																								
+	new ScrollScene({triggerElement: ".third_2_section", duration: '400', triggerHook: "0.3"})
+						.setPin(".third_2_slogan_text")
+						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
+						.addTo(controller);									
+								
 /*								
 	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.1"})
 								.setTween(TweenMax.to(".third_2_1_d", 1, {autoAlpha: 0, ease: Linear.easeNone}))
