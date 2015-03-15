@@ -70,8 +70,8 @@
     			<div class="third_descrip_cont">獨特按摩手法的關鍵在於：針對肩頸，先往前拉提，再向下推壓；不同於一般按摩椅，智尊椅獨有的下壓勁道更使得真人提抓按摩的舒暢感得以重現，讓您在家就能夠享受大師級的按摩手法與技術。</div>    			
     			</div>  
     		</div>
-    		<div style="position: absolute; top: 220px; left: 660px">
-    			<div class="third_descrip third_3_d" style="display: inline-block; width: 300px; position: relative; right: -50px;">
+    		<div style="position: absolute; top: 210px; left: 660px">
+    			<div class="third_descrip third_3_d" style="display: inline-block; width: 340px; position: relative; right: -50px;">
     			<div class="third_descrip_title">背部按摩範圍+20%</div>
     			<div class="third_descrip_cont">可全面覆蓋人體背部，從肩頸、胸椎到腰椎，比傳統的背部按摩範圍增加20%以上，可滿足各類體型的人士使用，讓您充分享受專屬於您的按摩理療程式。</div>    			
     			</div>
@@ -312,18 +312,17 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".second_section"})
 								.setTween(TweenMax.to(".sec_figure", 2, {top: "20", ease: Linear.easeNone}))
 								.addTo(controller)
+	/*					
 	new ScrollScene({triggerElement: ".third_section"})
-								.setTween(TweenMax.from(".third_1_d", 2, {right: "-20", ease: Linear.easeNone}))
+								.setTween(TweenMax.from(".third_1_d", 1, {left: "0", ease: Linear.easeNone}))
 								.addTo(controller)
 	new ScrollScene({triggerElement: ".third_section"})
-								.setTween(TweenMax.from(".third_2_d", 2, {right: "-140", ease: Linear.easeNone}))
+								.setTween(TweenMax.from(".third_2_d", 1, {left: "100", ease: Linear.easeNone}))
 								.addTo(controller)
 	new ScrollScene({triggerElement: ".third_section"})
-								.setTween(TweenMax.from(".third_3_d", 2, {right: "-80", ease: Linear.easeNone}))
+								.setTween(TweenMax.from(".third_3_d", 1, {left: "100", ease: Linear.easeNone}))
 								.addTo(controller)		
-										
-
-								
+    */																	
 	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_slogan", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
@@ -352,15 +351,46 @@ $(document).ready(function($) {
 								.setTween(TweenMax.to(".third_back", 0, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
 
-							
 	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
-						.setPin(".third_back")
+						.setPin(".third_slogan")
 						.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);	
+	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+						.setPin(".third_slogan_text")
+						.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);	
+	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+						.setPin(".third_1_d")
+						.addIndicators({name: "3 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);	
+	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+						.setPin(".third_2_d")
+						.addIndicators({name: "4 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);								
+	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+						.setPin(".third_3_d")
+						.addIndicators({name: "5 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);	
+	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+						.setPin(".third_1")
+						.addIndicators({name: "6 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);							
+	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+						.setPin(".third_2")
+						.addIndicators({name: "7 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);							
+	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+						.setPin(".third_3")
+						.addIndicators({name: "8 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);	
+	new ScrollScene({triggerElement: ".third_section", duration: '450', triggerHook: "0.1"})
+						.setPin(".third_back")
+						.addIndicators({name: "9 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);																			
 																										
 	new ScrollScene({triggerElement: ".third_section", duration: '1350', triggerHook: "0.1"})
 						.setPin(".third_chair")
-						.addIndicators({name: "1 (duration: 1350)"}) // add indicators (requires plugin)
+						.addIndicators({name: "10 (duration: 1350)"}) // add indicators (requires plugin)
 						.addTo(controller);	
 						
 								
