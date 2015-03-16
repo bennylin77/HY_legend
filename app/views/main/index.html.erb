@@ -133,26 +133,20 @@
 </section>
 <section class="fifth_section" id="fifth_section">
 <div class="container-fluid">
-	<div class="row" style="margin-top: 150px;">		
-    	<div class="col-sm-8 col-sm-offset-2 hidden-sm hidden-xs " style="background: #f7f2e9; border-radius: 25px; padding: 10px;">    	
-     		<%=image_tag 'fifth_circle.png', style:'visibility: hidden;', class: 'center-block fifth_circle'%> 	
- 		</div>
-    </div>
-	<div class="row">		
-    	<div class="col-sm-3 col-sm-offset-4 hidden-xs" style="margin-top: 15px;">    
-    		<div style="width: 400px; color:#774718; font-size: 36px; font-weight: bold; letter-spacing: 3px;">智尊專屬APP<span style="font-weight: normal">＞</span></div>    			
- 		</div>
-    </div> 
-	<div class="row" style="">		
-    	<div class="col-sm-8 col-sm-offset-2">    	
-     		<%=image_tag 'fifth_chair.png', style:'position: absolute; z-index:1; left: 60px; width: 400px;', class: 'fifth_chair hidden-xs hidden-sm'%> 		 	
-     		<%=image_tag 'fifth_living.png', style:'z-index:0; margin-top: 20px; width: 700px;', class: 'center-block hidden-xs hidden-md'%> 	  	
-     		<%=image_tag 'iphone.png', style:'position: absolute; right: 10px; top: -50px;', class: 'hidden-xs hidden-sm'%> 	
-    		<div style='position: absolute; top:200px; right: 10px; width: 180px;'>
+	<div class="row" style="margin-top: 150px;">	
+    	<div class="col-sm-12">   			
+	    	<div style="position: absolute; top: 40px; left: 50%; margin-left: -420px; background: #f7f2e9; border-radius: 25px; padding: 10px; width: 840px">    	
+	     		<%=image_tag 'fifth_circle.png', style:'visibility: hidden;', class: 'center-block fifth_circle'%> 	
+	 		</div> 
+	    	<div style="position: absolute; top: 150px; left: 50%; margin-left: -200px; width: 400px; color:#774718; font-size: 36px; font-weight: bold; letter-spacing: 3px;">智尊專屬APP<span style="font-weight: normal">＞</span></div>    			
+     		<%=image_tag 'fifth_chair.png', style:'position: absolute; top: 210px; left: 50%; margin-left: -500px; z-index:1; width: 400px;', class: 'fifth_chair hidden-xs hidden-sm'%> 		 	
+     		<%=image_tag 'fifth_living.png', style:'position: absolute; top: 220px; left: 50%; margin-left: -350px; z-index:0; width: 700px;', class: 'center-block hidden-xs hidden-md'%> 	  	
+     		<%=image_tag 'iphone.png', style:'position: absolute; top: 180px; left: 50%; margin-left: 280px; ', class: 'hidden-xs hidden-sm'%> 	
+    		<div style='position: absolute; top: 400px; left: 50%; margin-left: 100px; width: 180px;'>
     		<%=image_tag 'fifth_1_inner.svg', style: 'min-width: 150px; position: absolute; left: 15px; top: 15px;'%> 
     		<%=image_tag 'fifth_2_outter.svg', style: 'visibility: hidden; min-width: 180px;', class: 'fifth_2_outter'%>    
     		</div> 		
-    		<div style='position: absolute; top:200px; right: 210px; width: 180px;'>  		   		
+    		<div style='position: absolute; top: 400px; left: 50%; margin-left: 300px; width: 180px;'>  		   		
     		<%=image_tag 'fifth_2_inner.svg', style: 'min-width: 150px; position: absolute; left: 15px; top: 15px;'%>
     		<%=image_tag 'fifth_2_outter.svg', style: 'visibility: hidden; min-width: 180px;', class: 'fifth_2_outter'%>    		
  			</div> 		
@@ -458,7 +452,7 @@ $(document).ready(function($) {
 								.setTween(TweenMax.to(".fifth_circle", 3, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".fifth_section"})
-								.setTween(TweenMax.from(".fifth_chair", 2, {left: "20", ease: Linear.easeNone}))
+								.setTween(TweenMax.from(".fifth_chair", 2, {left: "550px", ease: Linear.easeNone}))
 								.addTo(controller)																				
 	new ScrollScene({triggerElement: ".fifth_section"})
 		.setTween(TweenMax.fromTo(".fifth_2_outter", 1,
