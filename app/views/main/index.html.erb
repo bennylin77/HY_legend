@@ -7,7 +7,7 @@
 	</ul>
 </div>
 <div class="container-fluid">
-	<div class="row" style="height: 520px;">	
+	<div class="row" style="height: 510px;">	
     	<div class="col-sm-12">	
  			<%=image_tag 'first_slogan.png',   style:'position: absolute; top: 140px; left: 50%; margin-left: -200px; height: 60px;', class: ''%> 
        		<%=image_tag 'seventh_slogan.png', style:'position: absolute; top: 170px; left: 50%; margin-left: -500px; height: 100px', class: ''%>      		 	    		    		    		
@@ -248,7 +248,7 @@ $(document).ready(function($) {
 	controller = new ScrollMagic();
 	// build scenes
 	new ScrollScene({triggerElement: ".first_section"})
-								.setTween(TweenMax.to(".first_man", 3, {autoAlpha: 1, ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".first_man", 2, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)		
 	new ScrollScene({triggerElement: ".second_section"})
 								.setTween(TweenMax.from(".sec_figure", 2, {top: "70", ease: Linear.easeNone}))
@@ -302,7 +302,7 @@ $(document).ready(function($) {
 						.addIndicators({name: "9 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);																														
 																										
-	new ScrollScene({triggerElement: ".third_section", duration: '3100', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '3300', triggerHook: "0.1"})
 						.setPin(".third_chair")
 						.addIndicators({name: "10 (duration: 2500)"}) // add indicators (requires plugin)
 						.addTo(controller);	
@@ -351,23 +351,23 @@ $(document).ready(function($) {
 								.setTween(TweenMax.to(".third_2_slogan_text", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
 		
-	new ScrollScene({triggerElement: ".third_2_section", duration: '1200', triggerHook: "0.3"})
+	new ScrollScene({triggerElement: ".third_2_section", duration: '1400', triggerHook: "0.3"})
 						.setPin(".third_2_1_d")
 						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
 						.addTo(controller);
-	new ScrollScene({triggerElement: ".third_2_section", duration: '1200', triggerHook: "0.3"})
+	new ScrollScene({triggerElement: ".third_2_section", duration: '1400', triggerHook: "0.3"})
 						.setPin(".third_2_circle")
 						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
 						.addTo(controller);
-	new ScrollScene({triggerElement: ".third_2_section", duration: '1200', triggerHook: "0.3"})
+	new ScrollScene({triggerElement: ".third_2_section", duration: '1400', triggerHook: "0.3"})
 						.setPin(".third_2_slogan")
 						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
 						.addTo(controller);
-	new ScrollScene({triggerElement: ".third_2_section", duration: '1200', triggerHook: "0.3"})
+	new ScrollScene({triggerElement: ".third_2_section", duration: '1400', triggerHook: "0.3"})
 						.setPin(".third_2_feet")
 						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
 						.addTo(controller);																								
-	new ScrollScene({triggerElement: ".third_2_section", duration: '1200', triggerHook: "0.3"})
+	new ScrollScene({triggerElement: ".third_2_section", duration: '1400', triggerHook: "0.3"})
 						.setPin(".third_2_slogan_text")
 						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
 						.addTo(controller);									
