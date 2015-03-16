@@ -118,13 +118,13 @@
 <section class="forth_section" id="forth_section">
 <div class="container-fluid">
 	<div class="row" style="margin-top: 130px;">		
-    	<div class="col-sm-6 col-sm-offset-3">    		
-    		<div class="center-block hidden-xs hidden-sm " style="width: 550px; letter-spacing:4px; color:#ffffff; font-size: 26px; line-height: 30px; text-align: center;">從頭頂至腳底<br>充分滿足你對按摩的美好想像</div>
+    	<div class="col-sm-12">    		
+    		<div class="center-block hidden-xs hidden-sm " style="width: 550px; letter-spacing:4px; color:#ffffff; font-size: 30px; line-height: 36px; text-align: center;">從頭頂至腳底<br>充分滿足你對按摩的美好想像</div>
     		<%=image_tag 'forth_circle.png', style:'height: 400px;', class: 'center-block hidden-xs'%> 
-    		<%=image_tag 'forth_1.png', style:'visibility: hidden; height: 300px; position: absolute; top: 0px; left: -100px;', class: 'forth_1 hidden-xs'%> 	 		
-    		<%=image_tag 'forth_2.png', style:'visibility: hidden; height: 300px; position: absolute; top: 320px; left: -80px;', class: 'forth_2 hidden-xs'%>     				
-    		<%=image_tag 'forth_3.png', style:'visibility: hidden; height: 240px; position: absolute; top: 400px; left: 140px;', class: 'forth_3 hidden-xs hidden-sm '%> 
-    		<%=image_tag 'forth_4.png', style:'visibility: hidden; height: 245px; position: absolute; top: 400px; right: 140px;', class: 'forth_4 hidden-xs hidden-sm '%>    	
+    		<%=image_tag 'forth_1.png', style:'visibility: hidden; height: 300px; position: absolute; top: 0px; left: 50%; margin-left: -450px;', class: 'forth_1 hidden-xs'%> 	 		
+    		<%=image_tag 'forth_2.png', style:'visibility: hidden; height: 300px; position: absolute; top: 320px; left: 50%; margin-left: -410px;', class: 'forth_2 hidden-xs'%>     				
+    		<%=image_tag 'forth_3.png', style:'visibility: hidden; height: 240px; position: absolute; top: 430px; left: 50%; margin-left: -200px;', class: 'forth_3 hidden-xs hidden-sm '%> 
+    		<%=image_tag 'forth_4.png', style:'visibility: hidden; height: 245px; position: absolute; top: 430px; left: 50%; margin-left: 0px;', class: 'forth_4 hidden-xs hidden-sm '%>    	
 			<%=image_tag 'forth_5.png', style:'visibility: hidden; height: 240px; position: absolute; top: 320px; right: -80px;', class: 'forth_6 hidden-xs'%>    		 		 		
 			<%=image_tag 'forth_6.png', style:'visibility: hidden; height: 300px; position: absolute; top: 0px; right: -100px;', class: 'pull-right forth_5 hidden-xs'%> 		
  		</div>
@@ -440,19 +440,19 @@ $(document).ready(function($) {
 								.setTween(TweenMax.to(".forth_1", 1, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".forth_section"})
-								.setTween(TweenMax.to(".forth_2", 3, {autoAlpha: 1, ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".forth_2", 2, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".forth_section"})
-								.setTween(TweenMax.to(".forth_3", 4, {autoAlpha: 1, ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".forth_3", 3, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".forth_section"})
-								.setTween(TweenMax.to(".forth_4", 5, {autoAlpha: 1, ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".forth_4", 4, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".forth_section"})
-								.setTween(TweenMax.to(".forth_5", 6, {autoAlpha: 1, ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".forth_5", 5, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)		
 	new ScrollScene({triggerElement: ".forth_section"})
-								.setTween(TweenMax.to(".forth_6", 7, {autoAlpha: 1, ease: Linear.easeNone}))
+								.setTween(TweenMax.to(".forth_6", 6, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)									
 	new ScrollScene({triggerElement: ".fifth_section"})
 								.setTween(TweenMax.to(".fifth_circle", 3, {autoAlpha: 1, ease: Linear.easeNone}))
