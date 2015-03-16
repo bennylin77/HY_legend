@@ -34,11 +34,11 @@
 <div class="container-fluid">
 	<div class="row" style="margin-top: 50px;">
     	<div class="col-sm-12">
-    		<%=image_tag 'sec_figure.png', style:'height: 450px; position: absolute; top: 170px; left: 50%; margin-left: -500px;', class: 'center-block'%>
-    		<div style="position: relative; top: 100px; left: 50%; margin-left: -200px;" class='sec_figure'>
+    		<%=image_tag 'sec_figure.png', style:'height: 450px; position: absolute; top: 0px; left: 50%; margin-left: -400px;', class: 'center-block'%>
+    		<div style="position: absolute; top: 0px; left: 50%; margin-left: 90px;" class='sec_figure'>
 	    		<div style="width: 400px; margin-top: 70px; font-size: 30px; letter-spacing: 1.9px;">輝葉<span style="font-size: 45px;">30</span>始終關心您的健康</div>
 	    		<div style="width: 400px; padding-bottom: 5px;font-size: 16px; letter-spacing: 4px; border-bottom: 1px solid;">一直以來，我們堅持用時間細磨出高端品質</div>
-	    		<div style="width: 400px; margin-top: 10px; font-size: 13px; letter-spacing: 4px; line-height: 24px;" class="hidden-xs">
+	    		<div style="width: 400px; margin-top: 10px; font-size: 13px; letter-spacing: 4px; line-height: 24px;" class="">
 	    		自民國72年創立以來，即以「 帶給人們更健康的生活 」為目標，不斷精進服務品質與技術，有別於一般健康器材品牌，採全直營方式銷與消費者做最直接的互動，聆聽每位客戶最深層的需求。期盼給您最親切專業的服務體驗，並與您一同邁向健康的人生！
 	 			</div>
  			</div>
@@ -72,9 +72,9 @@
     			<div class="third_descrip_cont">可全面覆蓋人體背部，從肩頸、胸椎到腰椎，比傳統的背部按摩範圍增加20%以上，可滿足各類體型的人士使用，讓您充分享受專屬於您的按摩理療程式。</div>    			
     			</div>
     		</div>	    		    		
-    		<%=image_tag 'third_1.png', style:' position: absolute; top: 370px; height: 100px; left: 50%; margin-left: 240px;', class: 'third_1 hidden-xs'%>	
-     		<%=image_tag 'third_2.png', style:' position: absolute; top: 370px; height: 100px; left: 50%; margin-left: 360px;', class: 'third_2 hidden-xs'%>
-     		<%=image_tag 'third_3.png', style:' position: absolute; top: 370px; height: 100px; left: 50%; margin-left: 480px;', class: 'third_3 hidden-xs'%>	  		
+    		<%=image_tag 'third_1.png', style:' position: absolute; top: 370px; height: 100px; left: 50%; margin-left: 240px;', class: 'third_1'%>	
+     		<%=image_tag 'third_2.png', style:' position: absolute; top: 370px; height: 100px; left: 50%; margin-left: 360px;', class: 'third_2'%>
+     		<%=image_tag 'third_3.png', style:' position: absolute; top: 370px; height: 100px; left: 50%; margin-left: 480px;', class: 'third_3'%>	  		
  		</div> 			  	 				
     </div>
 </div>
@@ -287,7 +287,7 @@ $(document).ready(function($) {
 								.setTween(TweenMax.to(".first_man", 3, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)		
 	new ScrollScene({triggerElement: ".second_section"})
-								.setTween(TweenMax.to(".sec_figure", 2, {top: "20", ease: Linear.easeNone}))
+								.setTween(TweenMax.from(".sec_figure", 2, {top: "70", ease: Linear.easeNone}))
 								.addTo(controller)
 	/*					
 	new ScrollScene({triggerElement: ".third_section"})
