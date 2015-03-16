@@ -50,7 +50,7 @@
 <div class="container-fluid">
 	<div class="row third_1_row" style="margin-top: 110px;">		
     	<div class="col-sm-12">
-    		<%=image_tag 'third_slogan.png', style:'z-index:1; height: 60px; position: absolute; left: 50%; margin-left: -500px;', class: 'third_slogan'%>
+    		<%=image_tag 'third_slogan.png', style:'z-index:1; height: 63px; position: absolute; left: 50%; margin-left: -500px;', class: 'third_slogan'%>
     		<div class="third_slogan_text" style="position: absolute; top: 65px; left: 50%; margin-left: -500px; width: 360px; color:#774718; font-size: 34px; font-weight: bold; letter-spacing: 3px;">智能穴位按摩技術<span style="font-weight: normal">＞</span></div>
     		<div style="z-index:1; position: absolute; top: 130px; left: 50%; margin-left: -550px;" >        					
     			<div class="third_descrip third_1_d" style="width: 250px; position: relative; right: -80px;">
@@ -302,7 +302,7 @@ $(document).ready(function($) {
 						.addIndicators({name: "9 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);																														
 																										
-	new ScrollScene({triggerElement: ".third_section", duration: '3300', triggerHook: "0.1"})
+	new ScrollScene({triggerElement: ".third_section", duration: '4100', triggerHook: "0.1"})
 						.setPin(".third_chair")
 						.addIndicators({name: "10 (duration: 2500)"}) // add indicators (requires plugin)
 						.addTo(controller);	
@@ -392,12 +392,10 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".third_3_section"})
 								.setTween(TweenMax.to(".third_3_r1", 2, {autoAlpha: 1, ease: Linear.easeNone}))
 								.addTo(controller)							
-	new ScrollScene({triggerElement: ".third_3_section"})
-								.setTween(TweenMax.to(".third_3_r2", 2, {autoAlpha: 1, ease: Linear.easeNone}))
-								.addTo(controller)
-	new ScrollScene({triggerElement: ".third_3_section"})
-								.setTween(TweenMax.to(".third_3_r3", 2, {autoAlpha: 1, ease: Linear.easeNone}))
-								.addTo(controller)								
+	new ScrollScene({triggerElement: ".third_3_section", duration: '800', triggerHook: "0.1"})
+						.setPin(".third_3_r1")
+						.addIndicators({name: "18 (duration: 100)"}) // add indicators (requires plugin)
+						.addTo(controller);								
 								
 								
 	new ScrollScene({triggerElement: ".forth_section"})
