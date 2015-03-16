@@ -1,4 +1,5 @@
 class MainController < ApplicationController
-  def index
+  before_filter :check_for_mobile, :only => [:index]  
+  def index   
   end
 end
