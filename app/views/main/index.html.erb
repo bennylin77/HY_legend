@@ -2,8 +2,8 @@
 <div style="" class="top_menu">
 	<%=image_tag 'HY_logo.png', style:'margin-top: 15px; height: 45px;', class: 'center-block'%>   
 	<ul class="list-unstyled center-block">
-		<li><a href="http://massage-hy.com.tw/">官方網站</a></li>
-		<li><a href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3">門市資料</a></li>
+		<li><a href="http://massage-hy.com.tw/" id="upperLink1">官方網站</a></li>
+		<li><a href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3" id="upperLink2">門市資料</a></li>
 	</ul>
 </div>
 <div class="container-fluid">
@@ -218,7 +218,7 @@
 <div class="container-fluid">
 	<div class="row">		
     	<div class="col-sm-7 col-sm-offset-3" style=""> 
-       		<a style="position: absolute; top: -10px;" href="http://massage-hy.com.tw" id="bottomLink"><%=image_tag 'HY_web.png', style:'margin-top: 5px; height: 36px;', class: 'HY_web center-block'%></a>     		   		    		   	 
+       		<a style="position: absolute; top: -10px;" href="http://massage-hy.com.tw" id="bottomLink3"><%=image_tag 'HY_web.png', style:'margin-top: 5px; height: 36px;', class: 'HY_web center-block'%></a>     		   		    		   	 
 			<ul style="position: absolute; left: 250px; ; padding-left: 10px; border-left: 2.5px solid #dedede; width: 520px;" class="list-unstyled" style="color: #757575">
 			  <li>
 			  	<strong>內湖旗艦店：</strong>台北市內湖區行愛路69號  	
@@ -492,13 +492,26 @@ $(function() {
   ga('send', 'pageview');
 </script>
 <script>
-
-$( "#bottomLink" ).click(function() {
+$( "#upperLink1" ).click(function() {
+	$.ajax({
+	  method: "GET",
+	  url: "/main/desktop_click",
+	  data: { location: 1}
+	})
+});
+$( "#upperLink2" ).click(function() {
 	$.ajax({
 	  method: "GET",
 	  url: "/main/desktop_click",
 	  data: { location: 2}
-})
+	})
+});
+$( "#bottomLink3" ).click(function() {
+	$.ajax({
+	  method: "GET",
+	  url: "/main/desktop_click",
+	  data: { location: 3}
+	})
 });
 </script>
 
