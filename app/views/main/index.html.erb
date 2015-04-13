@@ -204,7 +204,7 @@
        		<%=image_tag 'seventh_chair_4.png', style:'visibility: hidden; height: 540px; position: absolute; left: 585px;', class: 'seventh_chair_4'%>
        		</div>      		 	    		
     		<div style=" position: absolute; top: 600px; left: 50%; margin-left: -500px; ">
-       		<a href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3"><%=image_tag 'seventh_search.png', style:'width: 310px;', class: 'seventh_search'%></a>      		 	    		
+       		<a id="bottomLink3" href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3"><%=image_tag 'seventh_search.png', style:'width: 310px;', class: 'seventh_search'%></a>      		 	    		
        		<%=image_tag 'seventh_search_hand.png', style:'position: absolute; left: 270px; height: 50px;', class: 'seventh_search_hand'%>
        		</div>      		 	    		   		    			
     		<div style="position: absolute; top: 620px; left: 50%; margin-left: 200px; ">
@@ -218,7 +218,7 @@
 <div class="container-fluid">
 	<div class="row">		
     	<div class="col-sm-7 col-sm-offset-3" style=""> 
-       		<a style="position: absolute; top: -10px;" href="http://massage-hy.com.tw" id="bottomLink3"><%=image_tag 'HY_web.png', style:'margin-top: 5px; height: 36px;', class: 'HY_web center-block'%></a>     		   		    		   	 
+       		<a style="position: absolute; top: -10px;" href="http://massage-hy.com.tw" id="bottomLink4"><%=image_tag 'HY_web.png', style:'margin-top: 5px; height: 36px;', class: 'HY_web center-block'%></a>     		   		    		   	 
 			<ul style="position: absolute; left: 250px; ; padding-left: 10px; border-left: 2.5px solid #dedede; width: 520px;" class="list-unstyled" style="color: #757575">
 			  <li>
 			  	<strong>內湖旗艦店：</strong>台北市內湖區行愛路69號  	
@@ -511,6 +511,13 @@ $( "#bottomLink3" ).click(function() {
 	  method: "GET",
 	  url: "/main/desktop_click",
 	  data: { location: 3}
+	})
+});
+$( "#bottomLink4" ).click(function() {
+	$.ajax({
+	  method: "GET",
+	  url: "/main/desktop_click",
+	  data: { location: 4}
 	})
 });
 </script>
