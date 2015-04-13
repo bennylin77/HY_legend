@@ -11,9 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150413113230) do
+ActiveRecord::Schema.define(version: 20150413121054) do
 
   create_table "desktop_clicks", force: true do |t|
+    t.integer  "location"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mobile_clicks", force: true do |t|
     t.integer  "location"
     t.datetime "created_at"
     t.datetime "updated_at"
