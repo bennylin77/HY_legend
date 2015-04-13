@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  click: 1
+  location: 1
+
+two:
+  click: 1
+  location: 1
