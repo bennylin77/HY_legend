@@ -1,3 +1,8 @@
+<a href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3" style="z-index: 999; position: fixed; right: 0; top: 100px; 
+																						  background: #db1f18; font-size: 30px; padding: 15px;
+																						  width: 90px; color: #ffffff; text-decoration: none;" id="upperLink5">
+門市資料
+</a>
 <section class="first_section">
 <div style="" class="top_menu">
 	<%=image_tag 'HY_logo.png', style:'margin-top: 15px; height: 45px;', class: 'center-block'%>   
@@ -504,6 +509,13 @@ $( "#upperLink2" ).click(function() {
 	  method: "GET",
 	  url: "/main/desktop_click",
 	  data: { location: 2}
+	})
+});
+$( "#upperLink5" ).click(function() {
+	$.ajax({
+	  method: "GET",
+	  url: "/main/desktop_click",
+	  data: { location: 5}
 	})
 });
 $( "#bottomLink3" ).click(function() {

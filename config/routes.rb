@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'main/index'
+  get 'main/branch'  
   get 'main/desktop_click'
   get 'main/mobile_click'
 

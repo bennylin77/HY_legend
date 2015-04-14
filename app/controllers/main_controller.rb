@@ -3,6 +3,9 @@ class MainController < ApplicationController
   def index   
   end
   
+  def branch     
+  end  
+  
   def mobile_click
     c = MobileClick.new(location: params[:location])
     c.save!
