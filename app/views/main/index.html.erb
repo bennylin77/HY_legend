@@ -1,4 +1,4 @@
-<a href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3" style="z-index: 999; position: fixed; right: 0; top: 100px; 
+<a href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3" style="z-index: 999; position: absolute; right: 0; top: 200px; 
 																						  color: #ffffff; text-decoration: none;" id="upperLink5">
 <%=image_tag 'branch_icon.png',   style:'width: 110px;', class: ''%> 
 </a>
@@ -531,5 +531,22 @@ $( "#bottomLink4" ).click(function() {
 	  data: { location: 4}
 	})
 });
+
+
+    $.fn.scrollStopped = function(callback) {
+        var $this = $(this), self = this;
+        $this.scroll(function(){
+            if ($this.data('scrollTimeout')) {
+              clearTimeout($this.data('scrollTimeout'));
+            }
+            $this.data('scrollTimeout', setTimeout(callback,250,self));
+        });
+    };
+
+$(window).scrollStopped(function(){
+   $('#upperLink5').animate({top: $(window).scrollTop() + 200}, 600);
+});
+
+
 </script>
 
