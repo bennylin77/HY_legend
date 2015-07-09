@@ -1,0 +1,38 @@
+<a href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3" style="z-index: 999; position: absolute; right: 0; top: 200px; 
+																						  color: #ffffff; text-decoration: none;" id="upperLink5">
+<%=image_tag 'branch_icon.png',   style:'width: 110px;', class: ''%> 
+</a>
+<div style="display: -webkit-flex; 
+			-webkit-align-items: center; 
+			display: flex; 
+			align-items: center;
+			background: #171715">
+<div style="width: 900px; margin: 0 auto;">				
+<a href="http://massage-hy.com.tw/" style="position: relative; 
+										   left: 20px;
+    									   top: 99px;">
+<div style="width: 100px; background: none; height: 20px;"></div>
+</a>	
+<a href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3" style="position: relative; 
+										   left: 20px;
+    									   top: 99px;">
+<div style="width: 100px; background: none; height: 20px;"></div>
+</a>
+<%=image_tag 'safari.jpg',   style: 'width:900px; margin: 0px auto;'%> 
+</div>
+</div>
+<script>
+    $.fn.scrollStopped = function(callback) {
+        var $this = $(this), self = this;
+        $this.scroll(function(){
+            if ($this.data('scrollTimeout')) {
+              clearTimeout($this.data('scrollTimeout'));
+            }
+            $this.data('scrollTimeout', setTimeout(callback,250,self));
+        });
+    };
+
+$(window).scrollStopped(function(){
+   $('#upperLink5').animate({top: $(window).scrollTop() + 200}, 600);
+});	
+</script>

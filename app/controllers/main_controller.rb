@@ -1,6 +1,11 @@
 class MainController < ApplicationController
   before_filter :check_for_mobile, :only => [:index]  
   def index   
+    if browser.safari?
+      render 'index_safari'
+    else  
+      render 'index'      
+    end  
   end
   
   def branch     
