@@ -92,6 +92,9 @@
     		<div class="third_descrip third_2_1_d" style="position: absolute; top: 130px;  left: 50%; margin-left: -480px; display: inline-block; width: 250px;">
     			<div class="third_descrip_cont">以真人手感結合先進滾輪技術，提供專業按摩師般的刮痧按摩方式，對足底湧泉穴進行按摩，無論是輕柔穩定或是漸進是強力按摩，都能帶來前所未有的舒適和暢快。並針對腿部採氣囊加強，形狀各異的氣囊完整包覆小腿、腳踝及足部，對足三里穴、太溪穴、崑崙進行按摩、壓緊、停頓、放鬆的交互氣壓動做按摩方式，讓您到通體順暢，天人合一的境界。</div>    			
     		</div> 			
+    		<div style=" position: absolute; top: 450px;  left: 50%; margin-left: -500px; " class: 'third_2_click'>
+       		<a id="bottomLink3" href="http://massage-hy.com.tw/portal_d3.php?owner_num=d3_164186&button_num=d3"><%=image_tag 'seventh_search.png', style:'width: 310px;', class: 'third_2_click'%></a>      		 	    		
+       		</div>       		    			
     		<%=image_tag 'third_2_circle.png', style:'position: absolute; top: 0px; left: 50%; margin-left: 300px; height: 220px;', class: 'third_2_circle'%>
     		<div class="third_2_feet" style="position: absolute; top: 300px; left: 50%; margin-left: 230px;">
     		<%=image_tag 'third_2_feet_1.png', style:'position: absolute; height: 160px;', class: ''%>
@@ -222,11 +225,11 @@
 <div class="container-fluid">
 	<div class="row">		
     	<div class="col-sm-7 col-sm-offset-3" style=""> 
-       		<a style="position: absolute; top: -10px;" href="http://massage-hy.com.tw" id="bottomLink4"><%=image_tag 'HY_web.png', style:'margin-top: 5px; height: 36px;', class: 'HY_web center-block'%></a>     		   		    		   	 
+       		<a style="position: absolute; top: 10px;" href="http://massage-hy.com.tw" id="bottomLink4"><%=image_tag 'HY_web.png', style:'margin-top: 5px; height: 36px;', class: 'HY_web center-block'%></a>     		   		    		   	 
 			<ul style="position: absolute; left: 250px; ; padding-left: 10px; border-left: 2.5px solid #dedede; width: 520px;" class="list-unstyled" style="color: #757575">
 			  <li>
-			  	<strong>內湖旗艦店：</strong>台北市內湖區行愛路69號  	
-				<strong>Tel：</strong>(02)2793-6618			  	
+			  	<strong>內湖旗艦店</strong><br>  	
+				<span>台北市內湖區行愛路69號</span> (02)2793-6618			  	
 			  </li>
 			</ul>    		   		
  		</div> 		
@@ -314,7 +317,7 @@ $(document).ready(function($) {
 								.addTo(controller)	
 	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_slogan_text", 1, {autoAlpha: 0, ease: Linear.easeNone}))
-								.addTo(controller)																
+								.addTo(controller)																															
 	new ScrollScene({triggerElement: ".third_2_section", triggerHook: "0.8"})
 								.setTween(TweenMax.to(".third_1_d", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)										
@@ -346,6 +349,9 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".third_3_section"})
 								.setTween(TweenMax.to(".third_2_slogan", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
+	new ScrollScene({triggerElement: ".third_3_section", triggerHook: "0.8"})
+								.setTween(TweenMax.to(".third_2_click", 1, {autoAlpha: 0, ease: Linear.easeNone}))
+								.addTo(controller)										
 	new ScrollScene({triggerElement: ".third_3_section"})
 								.setTween(TweenMax.to(".third_2_feet", 1, {autoAlpha: 0, ease: Linear.easeNone}))
 								.addTo(controller)	
@@ -360,11 +366,17 @@ $(document).ready(function($) {
 	new ScrollScene({triggerElement: ".third_2_section", duration: '1400', triggerHook: "0.3"})
 						.setPin(".third_2_circle")
 						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
-						.addTo(controller);
+						.addTo(controller);						
 	new ScrollScene({triggerElement: ".third_2_section", duration: '1400', triggerHook: "0.3"})
 						.setPin(".third_2_slogan")
 						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
 						.addTo(controller);
+						
+	new ScrollScene({triggerElement: ".third_2_section", duration: '1400', triggerHook: "0.3"})
+						.setPin(".third_2_click")
+						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
+						.addTo(controller);		
+							
 	new ScrollScene({triggerElement: ".third_2_section", duration: '1400', triggerHook: "0.3"})
 						.setPin(".third_2_feet")
 						.addIndicators({name: "11 (duration: 100)"}) // add indicators (requires plugin)
